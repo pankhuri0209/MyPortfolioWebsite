@@ -249,7 +249,7 @@ const Home: React.FC = () => {
               {/* Left side: Content */}
               <div>
                 {/* Two-column layout: left column stacks MERN Stack and Elderlycare; right column holds badges spanning both rows */}
-                <div className="grid grid-cols-[1fr_auto] items-start gap-4 mb-4">
+                <div className="grid grid-cols-1 md:grid-cols-[1fr_auto] items-start gap-4 mb-4">
                   {/* Left column: two stacked rows */}
                   <div className="flex flex-col justify-start">
                     <h3
@@ -262,7 +262,7 @@ const Home: React.FC = () => {
                   </div>
 
                   {/* Right column: technologies (spans both rows visually) */}
-                  <div className="flex flex-wrap gap-3 items-start max-w-[65%]">
+                  <div className="flex flex-wrap gap-3 items-start w-full md:max-w-[65%] md:justify-end">
                     {[
                       "React",
                       "JavaScript",
@@ -349,21 +349,21 @@ const Home: React.FC = () => {
               {/* Left side: Content */}
               <div>
                 {/* Two-column layout: left column stacks MERN Stack and Elderlycare; right column holds badges spanning both rows */}
-                <div className="grid grid-cols-[1fr_auto] items-start gap-4 mb-4">
+                <div className="grid grid-cols-1 md:grid-cols-[1fr_auto] items-start gap-4 mb-4">
                   {/* Left column: two stacked rows */}
                   <div className="flex flex-col justify-start">
                     <h3
-                      className="font-semibold text-foreground/90 text-lg md:text-lg whitespace-nowrap"
+                      className="font-semibold text-foreground/90 text-lg md:text-lg whitespace-normal md:whitespace-nowrap"
                       style={{ color: "#E34D73FF" }}
                     >
                       Blockchain, Frontend
                     </h3>
-                    <h1 className="text-projects mt-0 whitespace-nowrap">Secure Social Care</h1>
+                    <h1 className="text-projects mt-0 whitespace-normal md:whitespace-nowrap">Secure Social Care</h1>
                   </div>
 
                   {/* Right column: technologies (spans both rows visually) */}
                   {/* allow badge column to take remaining space instead of capping at 65% */}
-                  <div className="flex flex-wrap gap-3 items-start">
+                  <div className="flex flex-wrap gap-3 items-start w-full md:justify-end">
                     {[
                      "Polygon Amoy Network",
                       "NFTs",
