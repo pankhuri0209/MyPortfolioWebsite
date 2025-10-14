@@ -245,45 +245,47 @@ const Home: React.FC = () => {
           style={{ backgroundColor: "#F6FBF0FF" }}
         >
           <CardBody>
-            <div className="grid grid-cols-1 md:grid-cols-[1fr_auto] gap-6">
+            <div className="grid grid-cols-1 md:grid-cols-[2fr_auto] gap-6">
               {/* Left side: Content */}
               <div>
-                {/* Table with 2 columns */}
-                <div className="inline-grid grid-cols-[auto_auto] gap-x-3 gap-y-2 mb-4">
-                  {/* Column 1, Row 1 */}
-                  <h3
-                    className="font-semibold text-foreground/90"
-                    style={{ color: "#81B72FFF" }}
-                  >
-                    MERN Stack
-                  </h3>
-
-                  {/* Column 2, Row 1 (spans 2 rows) */}
-                  <div className="flex gap-2 items-center row-span-2">
-                    <img
-                      src="/images/tech/react.png"
-                      alt="React"
-                      className="w-12 h-12 object-contain"
-                    />
-                    <img
-                      src="/images/tech/nodejs.png"
-                      alt="Node.js"
-                      className="w-12 h-12 object-contain"
-                    />
-                    <img
-                      src="/images/tech/mongodb.png"
-                      alt="Mongo.js"
-                      className="w-12 h-12 object-contain"
-                    />
-                    <img
-                      src="/images/tech/github.png"
-                      alt="github.js"
-                      className="w-12 h-12 object-contain"
-                    />
+                {/* Two-column layout: left column stacks MERN Stack and Elderlycare; right column holds badges spanning both rows */}
+                <div className="grid grid-cols-[1fr_auto] items-start gap-4 mb-4">
+                  {/* Left column: two stacked rows */}
+                  <div className="flex flex-col justify-start">
+                    <h3
+                      className="font-semibold text-foreground/90 text-lg md:text-lg"
+                      style={{ color: "#81B72FFF" }}
+                    >
+                      MERN Stack
+                    </h3>
+                    <h1 className="text-projects mt-0">Elderlycare</h1>
                   </div>
 
-                  {/* Column 1, Row 2 */}
-                  <h1 className="text-projects">Elderlycare</h1>
+                  {/* Right column: technologies (spans both rows visually) */}
+                  <div className="flex flex-wrap gap-3 items-start max-w-[65%]">
+                    {[
+                      "React",
+                      "JavaScript",
+                      "JSX",
+                      "Node.js",
+                      "Express.js",
+                      "JWT",
+                      "RBAC",
+                      "MongoDB",
+                      "OpenAI API",
+                      "Stripe API",
+                      "SendGrid",
+                      "Multer",
+                    ].map((tech) => (
+                      <span
+                        key={tech}
+                        className="inline-flex items-center px-3 py-1 rounded-full text-xs font-medium"
+                        style={{ backgroundColor: "#055f21ff", color: "#E6EEF7" }}
+                      >
+                        {tech}
+                      </span>
+                    ))}
+                  </div>
                 </div>
 
                 {/* Description */}
@@ -302,11 +304,11 @@ const Home: React.FC = () => {
                   alt="Logo"
                   className="logo-image"
                 />
-                <img
+                {/* <img
                   src="/images/elderlycare/hands.jpeg"
                   alt="Hands"
                   className="logo-image"
-                />
+                /> */}
               </div>
             </div>
 
@@ -334,7 +336,7 @@ const Home: React.FC = () => {
           </CardBody>
         </Card>
       </div>
-      <div className="flex justify-center mt-16 w-full">
+       <div className="flex justify-center mt-16 w-full">
         <Card
           isBlurred
           className="border-none bg-background/60 dark:bg-default-100/50 w-full max-w-[1150px] rounded-none"
@@ -342,50 +344,76 @@ const Home: React.FC = () => {
           style={{ backgroundColor: "#FDF2F4FF" }}
         >
           <CardBody>
-            <div className="grid grid-cols-12 md:grid-cols-24 gap-6 md:gap-4 items-center justify-center">
-              <div className="relative col-span-12 md:col-span-10"></div>
-              <div className="flex flex-col col-span-12 md:col-span-14">
-                <div className="flex flex-col md:flex-row justify-between items-start">
-                  <div className="flex flex-col gap-2 md:gap-0">
+            {/* give the left column a bit more room and avoid wrapping for titles */}
+            <div className="grid grid-cols-1 md:grid-cols-[1.7fr_auto] gap-6">
+              {/* Left side: Content */}
+              <div>
+                {/* Two-column layout: left column stacks MERN Stack and Elderlycare; right column holds badges spanning both rows */}
+                <div className="grid grid-cols-[1fr_auto] items-start gap-4 mb-4">
+                  {/* Left column: two stacked rows */}
+                  <div className="flex flex-col justify-start">
                     <h3
-                      className="font-semibold text-foreground/90"
+                      className="font-semibold text-foreground/90 text-lg md:text-lg whitespace-nowrap"
                       style={{ color: "#E34D73FF" }}
                     >
                       Blockchain, Frontend
                     </h3>
-                    <h1 className="text-projects">Secure Social Share</h1>
-                    <p className="text-medium text-foreground/80">
-                      An E2E encrypted data sharing system with strict, smart
-                      contract-based access control, allowing users to <br />{" "}
-                      securely share sensitive information with their social
-                      circle in a decentralized way. Winner of multiple 1st
-                      place <br />
-                      prizes at ETHBoston 2024.
-                    </p>
+                    <h1 className="text-projects mt-0 whitespace-nowrap">Secure Social Care</h1>
                   </div>
-                  <div className="flex space-x-4 mt-4 md:mt-0">
-                    <img
-                      src="/images/securesocialshare/lock.jpg"
-                      alt="Logo"
-                      className="logo-image"
-                      // height="350px"
-                      // width="100"
-                    />
-                    {/* <img
-                      src="/images/sample/e2.png"
-                      alt="Logo"
-                      className="logo-image"
-                    />
-                    <img
-                      src="/images/sample/e3.png"
-                      alt="Logo"
-                      className="logo-image"
-                    /> */}
+
+                  {/* Right column: technologies (spans both rows visually) */}
+                  {/* allow badge column to take remaining space instead of capping at 65% */}
+                  <div className="flex flex-wrap gap-3 items-start">
+                    {[
+                     "Polygon Amoy Network",
+                      "NFTs",
+                      "Smart Contracts",
+                      "Account Abstraction",
+                      "Web3",
+                      "Threshold Network",
+                      "End-to-End Encryption",
+                      "Access Control Lists (ACLs)",
+                      "DABL Launchpad",
+                      "Alchemy Account Abstraction SDK",
+                    ].map((tech) => (
+                      <span
+                        key={tech}
+                        className="inline-flex items-center px-3 py-1 rounded-full text-xs font-medium"
+                        style={{ backgroundColor: "#c602afff", color: "#E6EEF7" }}
+                      >
+                        {tech}
+                      </span>
+                    ))}
                   </div>
                 </div>
+
+                {/* Description */}
+                <p className="text-medium text-foreground/80">
+                  An E2E encrypted data sharing system with strict, smart
+                  contract-based access control, allowing users to <br /> securely
+                  share sensitive information with their social circle in a
+                  decentralized way. Winner of multiple 1st place prizes at
+                  ETHBoston 2024.
+                </p>
+              </div>
+
+              {/* Right side: Images */}
+              <div className="flex gap-4 items-start">
+                <img
+                  src="/images/securesocialshare/lock.jpg"
+                  alt="Logo"
+                  className="logo-image"
+                />
+                {/* <img
+                  src="/images/elderlycare/hands.jpeg"
+                  alt="Hands"
+                  className="logo-image"
+                /> */}
               </div>
             </div>
-            <div className="flex justify-start mt-4">
+
+            {/* View Project button */}
+            <div className="flex justify-start">
               <Link href="/secureshare">
                 <button className="button">
                   View Project
@@ -408,6 +436,7 @@ const Home: React.FC = () => {
           </CardBody>
         </Card>
       </div>
+      
       <br /> <br />
       <div className="col-span-12 md:col-span-8 flex justify-center">
         <Link href="/projects">
@@ -416,6 +445,8 @@ const Home: React.FC = () => {
           </button>
         </Link>
       </div>
+      <br />
+      <br />
       <br />
       <div className="col-span-12 md:col-span-8 flex justify-center">
         <h1 className="skills-heading  mb-5 text-center text-2xl md:text-5xl">
@@ -455,6 +486,11 @@ const Home: React.FC = () => {
           />
           <img
             src="/images/tech/angular.png"
+            alt="Logo"
+            className="skills-image"
+          />
+             <img
+            src="/images/tech/r.png"
             alt="Logo"
             className="skills-image"
           />
@@ -502,8 +538,65 @@ const Home: React.FC = () => {
             alt="Logo"
             className="skills-image"
           />
+          <img
+            src="/images/tech/extjs.png"
+            alt="Logo"
+            className="skills-image"
+          />
+        
+        </div>
+        <div className="col-span-12 md:col-span-16 flex flex-wrap justify-around items-center gap-4 mt- md:mt-0">
+          <img src="/images/tech/graphql.png" alt="Logo" className="skills-image" />
+          <img
+            src="/images/tech/redis.png"
+            alt="Logo"
+            className="skills-image"
+          />
+          <img src="/images/tech/aws.png" alt="Logo" className="skills-image" />
+          <img
+            src="/images/tech/kafka.png"
+            alt="Logo"
+            className="skills-image"
+          />
+          <img
+            src="/images/tech/cassandra.png"
+            alt="Logo"
+            className="skills-image"
+          />
+          <img
+            src="/images/tech/rabbitmq.png"
+            alt="Logo"
+            className="skills-image"
+          />
+          <img
+            src="/images/tech/vscode.png"
+            alt="Logo"
+            className="skills-image"
+          />
+          <img
+            src="/images/tech/elastic.png"
+            alt="Logo"
+            className="skills-image"
+          />
+          <img
+            src="/images/tech/kibana.png"
+            alt="Logo"
+            className="skills-image"
+          />
+          <img
+            src="/images/tech/tomcat.png"
+            alt="Logo"
+            className="skills-image"
+          />
+          <img
+            src="/images/tech/openai.png"
+            alt="Logo"
+            className="skills-image"
+          />
         </div>
       </div>
+      <br />
+      <br />
       <br />
       <br />
       <div className="col-span-12 md:col-span-8 flex justify-center">

@@ -7,7 +7,7 @@ import Navbar from "./components/Navbar"; // Ensure this path is correct
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "Pankhuri Gupta's Portfolio",
+  title: "Pankhuri Gupta - Portfolio Website | Software Developer Enthusiast",
   description: "Personal portfolio website of Pankhuri Gupta",
 };
 
