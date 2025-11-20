@@ -10,7 +10,8 @@ This is a Next.js portfolio website showcasing projects, blog posts, and profess
 - **Deployment Configuration**: Set up autoscale deployment with production build process
 - **Enhanced About Me Page**: Added professional timeline with 6 entries featuring company/university logos, durations, and responsive mobile layout with centered logo+duration clusters
 - **Wyckoff Trading Assistant Project**: Added dedicated project page at /wyckoff with comprehensive features, technology stack, and project details
-- **Project Cards Color Scheme**: Implemented distinct background colors for each project (Elderlycare: green, Secure Social Share: pink, Wyckoff: light blue, Cloud Native: light yellow)
+- **Meeting Notes Application Card**: Added new project card showcasing vanilla JavaScript meeting notes app with XMLHttpRequest data fetching, CSS transitions, SCSS styling, and dynamic action item management
+- **Project Cards Color Scheme**: Implemented distinct background colors for each project (Elderlycare: green, Secure Social Share: pink, Wyckoff: light blue, Cloud Native: light yellow, Meeting Notes: light purple)
 - **Updated Content**: Refined Wyckoff project description to be concise and focused on key features
 - **Fixed Vercel Deployment Issues**:
   - Replaced deprecated `node-sass` with modern `sass` (Dart Sass v1.94.2)

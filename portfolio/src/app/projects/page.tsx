@@ -415,6 +415,72 @@ const ProjectsPage: React.FC = () => {
             </div>
           </CardBody>
         </Card>
+        {/* Meeting Notes Application Project Card */}
+        <Card
+          isBlurred
+          className="border-none bg-background/60 dark:bg-default-100/50 w-full max-w-[1150px] rounded-none"
+          shadow="sm"
+          style={{ backgroundColor: "#F3E5F5" }}
+        >
+          <CardBody>
+            <div className="grid grid-cols-12 gap-6 md:gap-8 items-center">
+              {/* Image Section */}
+              <div className="col-span-12 md:col-span-5 flex justify-center">
+                <div className="flex space-x-4">
+                  <img
+                    src="/images/notes/notes-icon.png"
+                    alt="Meeting Notes Application"
+                    className="w-24 h-24 md:w-40 md:h-40 object-contain flex-shrink-0"
+                  />
+                </div>
+              </div>
+
+              {/* Text Content */}
+              <div className="col-span-12 md:col-span-7">
+                <h3
+                  className="font-semibold text-lg md:text-xl"
+                  style={{ color: "#9C27B0" }}
+                >
+                  JavaScript, Frontend
+                </h3>
+                <h1 className="text-2xl font-bold">
+                  <a
+                    href="https://github.com/pankhuri0209/meeting-notes-app"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="hover:underline"
+                  >
+                    Meeting Notes Application
+                  </a>
+                </h1>
+                <p className="text-base md:text-lg text-foreground/80 leading-relaxed">
+                  A simple yet powerful meeting notes application built with vanilla JavaScript. Features include creating notes with titles, content, and action items, viewing all notes with truncated content (10 words max), expanding notes with smooth CSS transitions to see full details, editing content and action items in expanded view, and toggling action items between open and completed states using checkboxes. The application fetches existing notes from a JSON file using XMLHttpRequest and allows users to add new notes with automatically generated creation timestamps. Built with modular SCSS for styling and a clean, responsive interface.
+                </p>
+                <div className="flex justify-start mt-4">
+                  <a
+                    href="https://github.com/pankhuri0209/meeting-notes-app"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <button className="button">
+                      View Project
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 25 25"
+                        className="icon w-4 h-4"
+                      >
+                        <path
+                          style={{ fill: "#232326" }}
+                          d="M24 12.001H2.914l5.294-5.295-.707-.707L1 12.501l6.5 6.5.707-.707-5.293-5.293H24v-1z"
+                        />
+                      </svg>
+                    </button>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </CardBody>
+        </Card>
       </div>
 
       <br />
