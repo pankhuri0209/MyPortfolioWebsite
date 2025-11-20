@@ -437,6 +437,92 @@ const Home: React.FC = () => {
         </Card>
       </div>
       
+      <div className="flex justify-center mt-16 w-full">
+        <Card
+          isBlurred
+          className="border-none bg-background/60 dark:bg-default-100/50 w-full max-w-[1150px] rounded-none"
+          shadow="sm"
+          style={{ backgroundColor: "#E8F4FDFF" }}
+        >
+          <CardBody>
+            <div className="grid grid-cols-1 md:grid-cols-[1.7fr_auto] gap-6">
+              {/* Left side: Content */}
+              <div>
+                <div className="grid grid-cols-1 md:grid-cols-[1fr_auto] items-start gap-4 mb-4">
+                  {/* Left column: two stacked rows */}
+                  <div className="flex flex-col justify-start">
+                    <h3
+                      className="font-semibold text-foreground/90 text-lg md:text-lg whitespace-normal md:whitespace-nowrap"
+                      style={{ color: "#1E88E5" }}
+                    >
+                      Machine Learning, Backend
+                    </h3>
+                    <h1 className="text-projects mt-0 whitespace-normal md:whitespace-nowrap">AI-Powered Richard Wyckoff Trading Assistant</h1>
+                  </div>
+
+                  {/* Right column: technologies */}
+                  <div className="flex flex-wrap gap-3 items-start w-full md:justify-end">
+                    {[
+                      "PyTorch",
+                      "Flask",
+                      "Q-Learning",
+                      "Reinforcement Learning",
+                      "Transformer",
+                      "yfinance",
+                      "Neural Networks",
+                      "REST API",
+                      "Chart.js",
+                    ].map((tech) => (
+                      <span
+                        key={tech}
+                        className="inline-flex items-center px-3 py-1 rounded-full text-xs font-medium"
+                        style={{ backgroundColor: "#0277BD", color: "#E6EEF7" }}
+                      >
+                        {tech}
+                      </span>
+                    ))}
+                  </div>
+                </div>
+
+                {/* Description */}
+                <p className="text-medium text-foreground/80">
+                  Wyckoff Trading Assistant is an intelligent web application that combines cutting-edge artificial intelligence with quantitative trading strategies to help traders analyze stock markets through the lens of Richard Wyckoff's time-tested methodology. Built on Flask and PyTorch, the application features two powerful components: an AI-powered chatbot that leverages a custom-trained Transformer neural network (with 6 encoder-decoder layers and 8 attention heads) to answer complex questions about Wyckoff principles including accumulation, distribution, springs, upthrusts, and market structure analysis; and a Reinforcement Learning trading engine that implements Q-learning algorithms to discover optimal buy/sell/hold strategies through backtesting on historical stock data. The system automatically fetches real-time market data via yfinance, enriches it with technical indicators (Moving Averages, RSI, Bollinger Bands, On-Balance Volume), and visualizes results through an interactive Chart.js dashboard. The chatbot, trained on 1,187 curated Wyckoff Q&A pairs, can intelligently respond to trading methodology queries, while the RL agent learns profitable trading patterns by training across 1,000 episodes, discretizing price-position states into a Q-table to maximize portfolio returns. With fallback mechanisms for both data fetching and model inference, robust error handling, and a responsive web interface, this full-stack application serves as both an educational tool for learning Wyckoff analysis and a practical backtesting platform for evaluating algorithmic trading strategies across any stock symbol with customizable parameters including date ranges and initial capital allocations.
+                </p>
+              </div>
+
+              {/* Right side: Placeholder for images */}
+              <div className="flex gap-4 items-start">
+                <div className="logo-image flex items-center justify-center" style={{ background: "linear-gradient(135deg, #667eea 0%, #764ba2 100%)", color: "white", fontSize: "48px", fontWeight: "bold" }}>
+                  AI
+                </div>
+              </div>
+            </div>
+
+            {/* View Project button */}
+            <div className="flex justify-start">
+              <Link href="/projects">
+                <button className="button">
+                  View Project
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 25 25"
+                    className="icon"
+                    width="16"
+                    height="16"
+                  >
+                    <path
+                      style={{ fill: "#232326" }}
+                      d="M24 12.001H2.914l5.294-5.295-.707-.707L1 12.501l6.5 6.5.707-.707-5.293-5.293H24v-1z"
+                      data-name="Left"
+                    />
+                  </svg>
+                </button>
+              </Link>
+            </div>
+          </CardBody>
+        </Card>
+      </div>
+      
       <br /> <br />
       <div className="col-span-12 md:col-span-8 flex justify-center">
         <Link href="/projects">
