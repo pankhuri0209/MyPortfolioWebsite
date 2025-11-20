@@ -212,6 +212,19 @@ export default function AboutMe() {
                 solutions effectively.
               </p>
             </div>
+            <div className="timeline-logo mt-6 md:mt-0 mr-8 md:mr-16 w-full md:w-1/2 md:text-right hidden md:flex flex-col items-end">
+              <Image
+                src="/images/tcs_ion_logo.png"
+                alt="TCS iON Logo"
+                width={200}
+                height={80}
+                className="mb-4"
+                style={{ height: 'auto' }}
+              />
+              <p className="text-base md:text-lg text-gray-500 font-semibold">
+                September 2019 - June 2021
+              </p>
+            </div>
           </div>
 
           <div className="timeline-item relative flex flex-col md:flex-row items-start md:items-center mb-12">
