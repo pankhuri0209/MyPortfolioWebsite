@@ -16,8 +16,7 @@ const Navbar = () => {
       url: "/Pankhuri_Gupta_Resume.pdf",
     },
     { id: 4, link: "hackathons" },
-    { id: 5, link: "blog" },
-    { id: 6, link: "contact" },
+    { id: 5, link: "contact" },
   ];
 
   return (
