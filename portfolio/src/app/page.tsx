@@ -502,7 +502,7 @@ const Home: React.FC = () => {
 
             {/* View Project button */}
             <div className="flex justify-start">
-              <Link href="/projects">
+              <Link href="/wyckoff">
                 <button className="button">
                   View Project
                   <svg
