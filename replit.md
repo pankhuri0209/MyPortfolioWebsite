@@ -12,7 +12,12 @@ This is a Next.js portfolio website showcasing projects, blog posts, and profess
 - **Wyckoff Trading Assistant Project**: Added dedicated project page at /wyckoff with comprehensive features, technology stack, and project details
 - **Project Cards Color Scheme**: Implemented distinct background colors for each project (Elderlycare: green, Secure Social Share: pink, Wyckoff: light blue, Cloud Native: light yellow)
 - **Updated Content**: Refined Wyckoff project description to be concise and focused on key features
-- **Fixed Vercel Deployment**: Replaced deprecated `node-sass` with modern `sass` (Dart Sass) to fix build errors on Vercel
+- **Fixed Vercel Deployment Issues**:
+  - Replaced deprecated `node-sass` with modern `sass` (Dart Sass v1.94.2)
+  - Updated Node.js version from 18.x to 22.x in package.json engines field (required by Vercel)
+  - Fixed ESLint errors: Escaped all unescaped apostrophes in JSX content (aboutme, page, projects, wyckoff pages)
+  - Vercel now successfully connected to correct repository: `pankhuri0209/MyPortfolioWebsite`
+  - Build compilation successful with all linting checks passing
 
 ## Project Architecture
 

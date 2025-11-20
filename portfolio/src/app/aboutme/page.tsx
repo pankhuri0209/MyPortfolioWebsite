@@ -123,11 +123,11 @@ export default function AboutMe() {
               </h2>
               <p className="text-base md:text-lg text-gray-400">
                 In 2024, driven by a growing fascination with the Software
-                Engineering, I am pursung a master's degree in Computer Software
+                Engineering, I am pursung a master&apos;s degree in Computer Software
                 Engineering at Northeastern University. This academic pursuit
                 sharpened my full-stack development capabilities. The experience
-                has been exhilarating—I've connected with brilliant minds at
-                Boston's tech events, won several hackathons.
+                has been exhilarating—I&apos;ve connected with brilliant minds at
+                Boston&apos;s tech events, won several hackathons.
               </p>
             </div>
           </div>
@@ -190,7 +190,7 @@ export default function AboutMe() {
               <p className="text-base md:text-lg text-gray-400">
                 My tenure at Tata Consultancy Services was a transformative
                 period in my career. As a Java Developer, I contributed to
-                developing user interfaces for TCS iON's Cloud-Based Solutions,
+                developing user interfaces for TCS iON&apos;s Cloud-Based Solutions,
                 utilizing MVC Frameworks and OOPS concepts. Working on the
                 Kettle Spoon tool, I managed data operations involving bulk
                 downloads, inserts, updates, and validations. This role
@@ -276,16 +276,16 @@ export default function AboutMe() {
                 fundamentals, studying subjects like Object-Oriented
                 Programming, Data Structures and Algorithms, Database Systems,
                 Operating Systems, Big Data Analytics, and Computer Networks. My
-                final year project, 'Kinova Robotic Arm,' involved programming
+                final year project, &apos;Kinova Robotic Arm,&apos; involved programming
                 the arm to draw alphabetic characters using C++ and computer
                 graphics concepts. A practice school course provided industry
                 exposure, and hands-on projects sharpened my analytical and
                 development skills, preparing me for real-world challenges.
                 Extracurricular activities also played a vital role in my
-                development. I secured second place in the university's sports
+                development. I secured second place in the university&apos;s sports
                 festival, contributed to the Sponsorship Team for major events,
                 and honed my ability to develop and pitch innovative solutions
-                in the 'BMU Pitchers' business idea competition.
+                in the &apos;BMU Pitchers&apos; business idea competition.
               </p>
             </div>
           </div>
