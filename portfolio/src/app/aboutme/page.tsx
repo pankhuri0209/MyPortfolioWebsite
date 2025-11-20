@@ -118,6 +118,19 @@ export default function AboutMe() {
                 Boston’s tech events, won several hackathons.
               </p>
             </div>
+            <div className="timeline-logo mt-6 md:mt-0 mr-8 md:mr-16 w-full md:w-1/2 md:text-right hidden md:flex flex-col items-end">
+              <Image
+                src="/images/neu_logo.png"
+                alt="Northeastern University Logo"
+                width={150}
+                height={150}
+                className="mb-4"
+                style={{ height: 'auto' }}
+              />
+              <p className="text-base md:text-lg text-gray-500 font-semibold">
+                January 2024 - December 2025
+              </p>
+            </div>
           </div>
           {/* <div className="timeline-item relative flex flex-col md:flex-row-reverse items-start md:items-center mb-12">
             <div className="timeline-dot bg-red-500 absolute left-2 md:left-1/2 transform -translate-x-1/2 -translate-y-1/2"></div>
