@@ -441,11 +441,11 @@ const ProjectsPage: React.FC = () => {
                   className="font-semibold text-lg md:text-xl"
                   style={{ color: "#9C27B0" }}
                 >
-                  JavaScript, Frontend
+                  Web Design Course, Feb 2024
                 </h3>
                 <h1 className="text-2xl font-bold">
                   <a
-                    href="https://github.com/pankhuri0209/meeting-notes-app"
+                    href="https://github.com/pankhuri0209/Note-making-application"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="hover:underline"
@@ -458,7 +458,7 @@ const ProjectsPage: React.FC = () => {
                 </p>
                 <div className="flex justify-start mt-4">
                   <a
-                    href="https://github.com/pankhuri0209/meeting-notes-app"
+                    href="https://github.com/pankhuri0209/Note-making-application"
                     target="_blank"
                     rel="noopener noreferrer"
                   >
