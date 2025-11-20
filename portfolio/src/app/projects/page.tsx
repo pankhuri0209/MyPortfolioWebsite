@@ -33,39 +33,88 @@ const ProjectsPage: React.FC = () => {
             </h1>
 
             <div className="space-y-6 text-lg text-gray-700">
-              <p className="text-xl leading-relaxed">
-                Welcome to my portfolio! Here you'll find a collection of projects 
-                showcasing my expertise in <strong>full-stack development</strong>, 
-                <strong> cloud infrastructure</strong>, <strong>blockchain technology</strong>, 
-                and <strong>machine learning</strong>. Each project demonstrates my ability 
-                to build scalable, production-ready applications using modern technologies 
-                and best practices.
-              </p>
-              
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-                <div>
-                  <h2 className="text-xl font-semibold flex items-center mb-2">
-                    💡 Featured Technologies
-                  </h2>
-                  <ul className="list-disc list-inside pl-3 space-y-1">
-                    <li>MERN Stack (MongoDB, Express, React, Node.js)</li>
-                    <li>AWS, Terraform, Docker, Kubernetes</li>
-                    <li>Blockchain & Smart Contracts (Ethereum)</li>
-                    <li>Machine Learning & AI (PyTorch, TensorFlow)</li>
-                  </ul>
-                </div>
-                
-                <div>
-                  <h2 className="text-xl font-semibold flex items-center mb-2">
-                    🎯 Core Competencies
-                  </h2>
-                  <ul className="list-disc list-inside pl-3 space-y-1">
-                    <li>Cloud-native application development</li>
-                    <li>CI/CD pipelines & DevOps automation</li>
-                    <li>Decentralized application (DApp) development</li>
-                    <li>Natural Language Processing & Deep Learning</li>
-                  </ul>
-                </div>
+              {/* Web & Cloud Solutions */}
+              <div>
+                <h2 className="text-2xl font-semibold flex items-center">
+                  🚀 Web & Cloud Solutions
+                </h2>
+                <ul className="list-disc list-inside pl-5">
+                  <li>
+                    Designed and deployed{" "}
+                    <strong>scalable e-commerce platforms</strong> using{" "}
+                    <strong>AWS, Terraform, and microservices</strong>.
+                  </li>
+                  <li>
+                    Built <strong>cloud-based applications</strong> with
+                    auto-scaling, CI/CD pipelines, and high availability.
+                  </li>
+                  <li>
+                    Developed <strong>secure REST APIs</strong> and GraphQL
+                    services for efficient data communication.
+                  </li>
+                </ul>
+              </div>
+
+              {/* Data & GIS Applications */}
+              <div>
+                <h2 className="text-2xl font-semibold flex items-center">
+                  📊 Data & GIS Applications
+                </h2>
+                <ul className="list-disc list-inside pl-5">
+                  <li>
+                    Engineered <strong>Java-based GIS solutions</strong> for
+                    spatial data analysis and visualization.
+                  </li>
+                  <li>
+                    Implemented{" "}
+                    <strong>data-driven decision-making tools</strong> using
+                    PostgreSQL, MongoDB, and ElasticSearch.
+                  </li>
+                  <li>
+                    Created <strong>automated ETL pipelines</strong> for
+                    large-scale data processing and analytics.
+                  </li>
+                </ul>
+              </div>
+
+              {/* Blockchain & FinTech */}
+              <div>
+                <h2 className="text-2xl font-semibold flex items-center">
+                  🔗 Blockchain & FinTech
+                </h2>
+                <ul className="list-disc list-inside pl-5">
+                  <li>
+                    Developed <strong>crypto-based payment platforms</strong>{" "}
+                    like <strong>Pay2Fix</strong>, enabling{" "}
+                    <strong>micropayments via smart contracts</strong>.
+                  </li>
+                  <li>
+                    Designed <strong>Ethereum-based DeFi solutions</strong> with
+                    secure wallet integrations and tokenized assets.
+                  </li>
+                </ul>
+              </div>
+
+              {/* AI & Robotics */}
+              <div>
+                <h2 className="text-2xl font-semibold flex items-center">
+                  🤖 AI & Robotics
+                </h2>
+                <ul className="list-disc list-inside pl-5">
+                  <li>
+                    Built a{" "}
+                    <strong>computer vision-powered control system</strong> for
+                    the <strong>Kinova Robotic Arm</strong>.
+                  </li>
+                  <li>
+                    Developed <strong>robotic path-planning algorithms</strong>{" "}
+                    for autonomous navigation.
+                  </li>
+                  <li>
+                    Optimized <strong>sensor fusion techniques</strong> to
+                    enhance robotic precision.
+                  </li>
+                </ul>
               </div>
             </div>
           </div>
