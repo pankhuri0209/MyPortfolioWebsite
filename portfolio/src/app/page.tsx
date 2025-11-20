@@ -490,11 +490,13 @@ const Home: React.FC = () => {
                 </p>
               </div>
 
-              {/* Right side: Placeholder for images */}
+              {/* Right side: Images */}
               <div className="flex gap-4 items-start">
-                <div className="logo-image flex items-center justify-center" style={{ background: "linear-gradient(135deg, #667eea 0%, #764ba2 100%)", color: "white", fontSize: "48px", fontWeight: "bold" }}>
-                  AI
-                </div>
+                <img
+                  src="/images/wyckoff/wykoff_chart.png"
+                  alt="Wyckoff Chart"
+                  className="logo-image"
+                />
               </div>
             </div>
 
