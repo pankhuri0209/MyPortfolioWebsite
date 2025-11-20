@@ -245,6 +245,30 @@ export default function AboutMe() {
                 insights.
               </p>
             </div>
+            <div className="timeline-logo mt-6 md:mt-0 ml-8 md:ml-16 w-full md:w-1/2 md:text-left hidden md:flex flex-col items-start">
+              <div className="flex gap-4 mb-4">
+                <Image
+                  src="/images/crac_logo.png"
+                  alt="CRAC Logo"
+                  width={100}
+                  height={60}
+                  style={{ height: 'auto' }}
+                />
+                <Image
+                  src="/images/4cplus_logo.jpeg"
+                  alt="4C Plus Logo"
+                  width={100}
+                  height={60}
+                  style={{ height: 'auto' }}
+                />
+              </div>
+              <p className="text-base md:text-lg text-gray-500 font-semibold">
+                June 2018 - July 2018
+              </p>
+              <p className="text-base md:text-lg text-gray-500 font-semibold">
+                & February 2019 - August 2019
+              </p>
+            </div>
           </div>
           <div className="timeline-item relative flex flex-col md:flex-row-reverse items-start md:items-center mb-12">
             <div className="timeline-dot bg-purple-900 absolute left-2 md:left-1/2 transform -translate-x-1/2 -translate-y-1/2"></div>
