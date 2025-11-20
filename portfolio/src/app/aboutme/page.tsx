@@ -1,7 +1,7 @@
 "use client";
 import Image from "next/image";
-import Navbar from "../components/Navbar"; // Ensure this path is correct
-import Footer from "../components/Footer"; // Ensure this path is correct
+import Navbar from "../components/Navbar";
+import Footer from "../components/Footer";
 import { Card, CardBody, Button, Slider, CardFooter } from "@nextui-org/react";
 import Script from "next/script";
 import React, { useEffect } from "react";
@@ -52,9 +52,9 @@ export default function AboutMe() {
             </div>
           </div>
         </div>
-        <div className="hidden md:flex justify-center md:justify-end w-full md:w-auto">
+        <div className="flex justify-center md:justify-end w-full md:w-auto">
           <Image
-            src="/images/pics/pic3.png" // Ensure this path is correct
+            src="/images/pics/pic3.png"
             alt="Profile Picture"
             width={400}
             height={300}
@@ -62,7 +62,6 @@ export default function AboutMe() {
           />
         </div>
       </div>
-      {/* till */}
 
       <div className="relative container mx-auto px-4 py-16 min-h-screen">
         <div className="absolute inset-0 flex justify-start md:justify-center items-center">
@@ -71,7 +70,20 @@ export default function AboutMe() {
         <div className="relative z-10 w-full">
           <div className="timeline-item relative flex flex-col md:flex-row items-start md:items-center mb-12">
             <div className="timeline-dot bg-orange-500 absolute left-2 md:left-1/2 transform -translate-x-1/2 -translate-y-1/2"></div>
-            <div className="timeline-content mt-6 md:mt-0 mr-8 md:mr-16 w-full md:w-1/2 md:text-right">
+            <div className="timeline-logo mb-4 md:mb-0 md:mt-0 ml-8 md:ml-16 w-full md:w-1/2 md:text-left flex flex-col items-start order-1 md:order-2">
+              <Image
+                src="/images/aws_marketplace_logo.png"
+                alt="AWS Marketplace Logo"
+                width={200}
+                height={80}
+                className="mb-4"
+                style={{ height: 'auto' }}
+              />
+              <p className="text-base md:text-lg text-gray-500 font-semibold">
+                May 2025 - August 2025
+              </p>
+            </div>
+            <div className="timeline-content mt-6 md:mt-0 mr-8 md:mr-16 w-full md:w-1/2 md:text-right order-2 md:order-1">
               <h2 className="text-2xl md:text-3xl text-orange-500 mb-4">
                 Amazon Web Services (AWS)- SDE Intern
               </h2>
@@ -89,36 +101,10 @@ export default function AboutMe() {
                 resolution time from days to under two hours.
               </p>
             </div>
-            <div className="timeline-logo mt-6 md:mt-0 ml-8 md:ml-16 w-full md:w-1/2 md:text-left hidden md:flex flex-col items-start">
-              <Image
-                src="/images/aws_marketplace_logo.png"
-                alt="AWS Marketplace Logo"
-                width={200}
-                height={80}
-                className="mb-4"
-                style={{ height: 'auto' }}
-              />
-              <p className="text-base md:text-lg text-gray-500 font-semibold">
-                May 2025 - August 2025
-              </p>
-            </div>
           </div>
           <div className="timeline-item relative flex flex-col md:flex-row-reverse items-start md:items-center mb-12">
             <div className="timeline-dot bg-red-500 absolute left-2 md:left-1/2 transform -translate-x-1/2 -translate-y-1/2"></div>
-            <div className="timeline-content mt-6 md:mt-0 ml-8 md:ml-16 w-full md:w-1/2 md:text-left">
-              <h2 className="text-2xl md:text-3xl text-red-500 mb-4">
-                Northeastern University
-              </h2>
-              <p className="text-base md:text-lg text-gray-400">
-                In 2024, driven by a growing fascination with the Software
-                Engineering, I am pursung a master’s degree in Computer Software
-                Engineering at Northeastern University. This academic pursuit
-                sharpened my full-stack development capabilities. The experience
-                has been exhilarating—I’ve connected with brilliant minds at
-                Boston’s tech events, won several hackathons.
-              </p>
-            </div>
-            <div className="timeline-logo mt-6 md:mt-0 mr-8 md:mr-16 w-full md:w-1/2 md:text-right hidden md:flex flex-col items-end">
+            <div className="timeline-logo mb-4 md:mb-0 md:mt-0 ml-8 md:mr-8 md:ml-0 md:mr-16 w-full md:w-1/2 md:text-right flex flex-col items-start md:items-end order-1 md:order-2">
               <Image
                 src="/images/neu_logo.png"
                 alt="Northeastern University Logo"
@@ -131,33 +117,37 @@ export default function AboutMe() {
                 January 2024 - December 2025
               </p>
             </div>
-          </div>
-          {/* <div className="timeline-item relative flex flex-col md:flex-row-reverse items-start md:items-center mb-12">
-            <div className="timeline-dot bg-red-500 absolute left-2 md:left-1/2 transform -translate-x-1/2 -translate-y-1/2"></div>
-            <div className="timeline-content mt-6 md:mt-0 ml-8 md:ml-16 w-full md:w-1/2 md:text-left">
+            <div className="timeline-content mt-6 md:mt-0 ml-8 md:ml-16 w-full md:w-1/2 md:text-left order-2 md:order-1">
               <h2 className="text-2xl md:text-3xl text-red-500 mb-4">
-                Hexagon India Pvt. Ltd.
+                Northeastern University
               </h2>
               <p className="text-base md:text-lg text-gray-400">
-                My experience at Hexagon Geosystems was a pivotal chapter in my
-                professional journey. As a Software Engineer, I worked on
-                developing Java-based GIS solutions (Luciad Product) for
-                esteemed clients in the Defense, Military, and Aviation
-                industries. This role required a deep understanding of advanced
-                Java concepts, Spring Boot, and Node.js frameworks. I provided
-                technical consulting and collaborated closely with clients to
-                analyze their requirements and implement efficient, stable GIS
-                software solutions. This experience honed my technical skills,
-                enhanced my problem-solving capabilities, and strengthened my
-                ability to deliver high-impact solutions in a dynamic,
-                high-stakes environment.
+                In 2024, driven by a growing fascination with the Software
+                Engineering, I am pursung a master's degree in Computer Software
+                Engineering at Northeastern University. This academic pursuit
+                sharpened my full-stack development capabilities. The experience
+                has been exhilarating—I've connected with brilliant minds at
+                Boston's tech events, won several hackathons.
               </p>
             </div>
-          </div> */}
+          </div>
 
           <div className="timeline-item relative flex flex-col md:flex-row items-start md:items-center mb-12">
             <div className="timeline-dot bg-green-500 absolute left-2 md:left-1/2 transform -translate-x-1/2 -translate-y-1/2"></div>
-            <div className="timeline-content mt-6 md:mt-0 mr-8 md:mr-16 w-full md:w-1/2 md:text-right">
+            <div className="timeline-logo mb-4 md:mb-0 md:mt-0 ml-8 md:ml-16 w-full md:w-1/2 md:text-left flex flex-col items-start order-1 md:order-2">
+              <Image
+                src="/images/hexagon_logo.jpg"
+                alt="Hexagon Logo"
+                width={200}
+                height={80}
+                className="mb-4"
+                style={{ height: 'auto' }}
+              />
+              <p className="text-base md:text-lg text-gray-500 font-semibold">
+                July 2021 - December 2023
+              </p>
+            </div>
+            <div className="timeline-content mt-6 md:mt-0 mr-8 md:mr-16 w-full md:w-1/2 md:text-right order-2 md:order-1">
               <h2 className="text-2xl md:text-3xl text-green-500 mb-4">
                 Hexagon India Pvt. Ltd.
               </h2>
@@ -176,43 +166,11 @@ export default function AboutMe() {
                 high-stakes environment.
               </p>
             </div>
-            <div className="timeline-logo mt-6 md:mt-0 ml-8 md:ml-16 w-full md:w-1/2 md:text-left hidden md:flex flex-col items-start">
-              <Image
-                src="/images/hexagon_logo.jpg"
-                alt="Hexagon Logo"
-                width={200}
-                height={80}
-                className="mb-4"
-                style={{ height: 'auto' }}
-              />
-              <p className="text-base md:text-lg text-gray-500 font-semibold">
-                July 2021 - December 2023
-              </p>
-            </div>
           </div>
 
           <div className="timeline-item relative flex flex-col md:flex-row-reverse items-start md:items-center mb-12">
             <div className="timeline-dot bg-blue-500 absolute left-2 md:left-1/2 transform -translate-x-1/2 -translate-y-1/2"></div>
-            <div className="timeline-content mt-6 md:mt-0 ml-8 md:ml-16 w-full md:w-1/2 md:text-left">
-              <h2 className="text-2xl md:text-3xl text-blue-500 mb-4">
-                Tata Consultancy Services
-              </h2>
-              <p className="text-base md:text-lg text-gray-400">
-                My tenure at Tata Consultancy Services was a transformative
-                period in my career. As a Java Developer, I contributed to
-                developing user interfaces for TCS iON’s Cloud-Based Solutions,
-                utilizing MVC Frameworks and OOPS concepts. Working on the
-                Kettle Spoon tool, I managed data operations involving bulk
-                downloads, inserts, updates, and validations. This role
-                significantly enhanced my technical acumen and problem-solving
-                skills. Collaborating with various clients to monitor issues and
-                execute product development as per their requirements provided
-                me with invaluable experience in client management and product
-                development, shaping my ability to deliver high-quality software
-                solutions effectively.
-              </p>
-            </div>
-            <div className="timeline-logo mt-6 md:mt-0 mr-8 md:mr-16 w-full md:w-1/2 md:text-right hidden md:flex flex-col items-end">
+            <div className="timeline-logo mb-4 md:mb-0 md:mt-0 ml-8 md:mr-8 md:ml-0 md:mr-16 w-full md:w-1/2 md:text-right flex flex-col items-start md:items-end order-1 md:order-2">
               <Image
                 src="/images/tcs_ion_logo.png"
                 alt="TCS iON Logo"
@@ -225,27 +183,30 @@ export default function AboutMe() {
                 September 2019 - June 2021
               </p>
             </div>
+            <div className="timeline-content mt-6 md:mt-0 ml-8 md:ml-16 w-full md:w-1/2 md:text-left order-2 md:order-1">
+              <h2 className="text-2xl md:text-3xl text-blue-500 mb-4">
+                Tata Consultancy Services
+              </h2>
+              <p className="text-base md:text-lg text-gray-400">
+                My tenure at Tata Consultancy Services was a transformative
+                period in my career. As a Java Developer, I contributed to
+                developing user interfaces for TCS iON's Cloud-Based Solutions,
+                utilizing MVC Frameworks and OOPS concepts. Working on the
+                Kettle Spoon tool, I managed data operations involving bulk
+                downloads, inserts, updates, and validations. This role
+                significantly enhanced my technical acumen and problem-solving
+                skills. Collaborating with various clients to monitor issues and
+                execute product development as per their requirements provided
+                me with invaluable experience in client management and product
+                development, shaping my ability to deliver high-quality software
+                solutions effectively.
+              </p>
+            </div>
           </div>
 
           <div className="timeline-item relative flex flex-col md:flex-row items-start md:items-center mb-12">
             <div className="timeline-dot bg-yellow-500 absolute left-2 md:left-1/2 transform -translate-x-1/2 -translate-y-1/2"></div>
-            <div className="timeline-content mt-6 md:mt-0 mr-8 md:mr-16 w-full md:w-1/2 md:text-right">
-              <h2 className="text-2xl md:text-3xl text-yellow-500 mb-4">
-                CRAC Infosystem Private Limited & Four C Plus (Internet) Company
-              </h2>
-              <p className="text-base md:text-lg text-gray-400">
-                Internships complemented my academic pursuits by providing
-                practical experience. I interned with CRAC Infosystem Private
-                Limited as a web developer, assisting in website creation using
-                web technologies. At Four C Plus (Internet) Company Limited, a
-                Hindustan Times Syndication company, I designed and developed an
-                e-commerce application using Angular 7.0 and a Desktop
-                Application with Electron. These internships were instrumental
-                in refining my technical skills and gaining invaluable industry
-                insights.
-              </p>
-            </div>
-            <div className="timeline-logo mt-6 md:mt-0 ml-8 md:ml-16 w-full md:w-1/2 md:text-left hidden md:flex flex-col items-start">
+            <div className="timeline-logo mb-4 md:mb-0 md:mt-0 ml-8 md:ml-16 w-full md:w-1/2 md:text-left flex flex-col items-start order-1 md:order-2">
               <div className="flex gap-4 mb-4">
                 <Image
                   src="/images/crac_logo.png"
@@ -269,10 +230,39 @@ export default function AboutMe() {
                 & February 2019 - August 2019
               </p>
             </div>
+            <div className="timeline-content mt-6 md:mt-0 mr-8 md:mr-16 w-full md:w-1/2 md:text-right order-2 md:order-1">
+              <h2 className="text-2xl md:text-3xl text-yellow-500 mb-4">
+                CRAC Infosystem Private Limited & Four C Plus (Internet) Company
+              </h2>
+              <p className="text-base md:text-lg text-gray-400">
+                Internships complemented my academic pursuits by providing
+                practical experience. I interned with CRAC Infosystem Private
+                Limited as a web developer, assisting in website creation using
+                web technologies. At Four C Plus (Internet) Company Limited, a
+                Hindustan Times Syndication company, I designed and developed an
+                e-commerce application using Angular 7.0 and a Desktop
+                Application with Electron. These internships were instrumental
+                in refining my technical skills and gaining invaluable industry
+                insights.
+              </p>
+            </div>
           </div>
           <div className="timeline-item relative flex flex-col md:flex-row-reverse items-start md:items-center mb-12">
             <div className="timeline-dot bg-purple-900 absolute left-2 md:left-1/2 transform -translate-x-1/2 -translate-y-1/2"></div>
-            <div className="timeline-content mt-6 md:mt-0 ml-8 md:ml-16 w-full md:w-1/2 md:text-left">
+            <div className="timeline-logo mb-4 md:mb-0 md:mt-0 ml-8 md:mr-8 md:ml-0 md:mr-16 w-full md:w-1/2 md:text-right flex flex-col items-start md:items-end order-1 md:order-2">
+              <Image
+                src="/images/bml_logo.png"
+                alt="BML Munjal University Logo"
+                width={200}
+                height={80}
+                className="mb-4"
+                style={{ height: 'auto' }}
+              />
+              <p className="text-base md:text-lg text-gray-500 font-semibold">
+                September 2015 - September 2019
+              </p>
+            </div>
+            <div className="timeline-content mt-6 md:mt-0 ml-8 md:ml-16 w-full md:w-1/2 md:text-left order-2 md:order-1">
               <h2 className="text-2xl md:text-3xl text-purple-900 mb-4">
                 BML Munjal University
               </h2>
@@ -284,29 +274,16 @@ export default function AboutMe() {
                 fundamentals, studying subjects like Object-Oriented
                 Programming, Data Structures and Algorithms, Database Systems,
                 Operating Systems, Big Data Analytics, and Computer Networks. My
-                final year project, ‘Kinova Robotic Arm,’ involved programming
+                final year project, 'Kinova Robotic Arm,' involved programming
                 the arm to draw alphabetic characters using C++ and computer
                 graphics concepts. A practice school course provided industry
                 exposure, and hands-on projects sharpened my analytical and
                 development skills, preparing me for real-world challenges.
                 Extracurricular activities also played a vital role in my
-                development. I secured second place in the university’s sports
+                development. I secured second place in the university's sports
                 festival, contributed to the Sponsorship Team for major events,
                 and honed my ability to develop and pitch innovative solutions
-                in the ‘BMU Pitchers’ business idea competition.
-              </p>
-            </div>
-            <div className="timeline-logo mt-6 md:mt-0 mr-8 md:mr-16 w-full md:w-1/2 md:text-right hidden md:flex flex-col items-end">
-              <Image
-                src="/images/bml_logo.png"
-                alt="BML Munjal University Logo"
-                width={200}
-                height={80}
-                className="mb-4"
-                style={{ height: 'auto' }}
-              />
-              <p className="text-base md:text-lg text-gray-500 font-semibold">
-                September 2015 - September 2019
+                in the 'BMU Pitchers' business idea competition.
               </p>
             </div>
           </div>
