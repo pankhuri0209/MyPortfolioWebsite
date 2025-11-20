@@ -296,6 +296,19 @@ export default function AboutMe() {
                 in the ‘BMU Pitchers’ business idea competition.
               </p>
             </div>
+            <div className="timeline-logo mt-6 md:mt-0 mr-8 md:mr-16 w-full md:w-1/2 md:text-right hidden md:flex flex-col items-end">
+              <Image
+                src="/images/bml_logo.png"
+                alt="BML Munjal University Logo"
+                width={200}
+                height={80}
+                className="mb-4"
+                style={{ height: 'auto' }}
+              />
+              <p className="text-base md:text-lg text-gray-500 font-semibold">
+                September 2015 - September 2019
+              </p>
+            </div>
           </div>
         </div>
         <style jsx>{`
