@@ -442,7 +442,7 @@ const Home: React.FC = () => {
           isBlurred
           className="border-none bg-background/60 dark:bg-default-100/50 w-full max-w-[1150px] rounded-none"
           shadow="sm"
-          style={{ backgroundColor: "#F3E5F5" }}
+          style={{ backgroundColor: "#E8F4FDFF" }}
         >
           <CardBody>
             <div className="grid grid-cols-1 md:grid-cols-[1.7fr_auto] gap-6">
