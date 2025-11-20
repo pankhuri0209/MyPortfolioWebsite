@@ -70,20 +70,20 @@ export default function AboutMe() {
         <div className="relative z-10 w-full">
           <div className="timeline-item relative flex flex-col md:flex-row items-start md:items-center mb-12">
             <div className="timeline-dot bg-orange-500 absolute left-2 md:left-1/2 transform -translate-x-1/2 -translate-y-1/2"></div>
-            <div className="timeline-logo mb-4 md:mb-0 md:mt-0 ml-8 md:ml-16 w-full md:w-1/2 text-center md:text-left flex flex-col items-center md:items-start order-1 md:order-2">
+            <div className="timeline-logo mb-2 md:mb-0 md:mt-0 ml-8 md:ml-16 w-full md:w-1/2 text-center md:text-left flex flex-col items-center md:items-start order-1 md:order-2">
               <Image
                 src="/images/aws_marketplace_logo.png"
                 alt="AWS Marketplace Logo"
                 width={200}
                 height={80}
-                className="mb-4"
+                className="mb-2"
                 style={{ height: 'auto' }}
               />
               <p className="text-base md:text-lg text-gray-500 font-semibold">
                 May 2025 - August 2025
               </p>
             </div>
-            <div className="timeline-content mt-6 md:mt-0 mr-8 md:mr-16 w-full md:w-1/2 md:text-right order-2 md:order-1">
+            <div className="timeline-content mt-2 md:mt-0 mr-8 md:mr-16 w-full md:w-1/2 md:text-right order-2 md:order-1">
               <h2 className="text-2xl md:text-3xl text-orange-500 mb-4">
                 Amazon Web Services (AWS)- SDE Intern
               </h2>
@@ -104,20 +104,20 @@ export default function AboutMe() {
           </div>
           <div className="timeline-item relative flex flex-col md:flex-row-reverse items-start md:items-center mb-12">
             <div className="timeline-dot bg-red-500 absolute left-2 md:left-1/2 transform -translate-x-1/2 -translate-y-1/2"></div>
-            <div className="timeline-logo mb-4 md:mb-0 md:mt-0 ml-8 md:mr-8 md:ml-0 md:mr-16 w-full md:w-1/2 text-center md:text-right flex flex-col items-center md:items-end order-1 md:order-2">
+            <div className="timeline-logo mb-2 md:mb-0 md:mt-0 ml-8 md:mr-8 md:ml-0 md:mr-16 w-full md:w-1/2 text-center md:text-right flex flex-col items-center md:items-end order-1 md:order-2">
               <Image
                 src="/images/neu_logo.png"
                 alt="Northeastern University Logo"
                 width={150}
                 height={150}
-                className="mb-4"
+                className="mb-2"
                 style={{ height: 'auto' }}
               />
               <p className="text-base md:text-lg text-gray-500 font-semibold">
                 January 2024 - December 2025
               </p>
             </div>
-            <div className="timeline-content mt-6 md:mt-0 ml-8 md:ml-16 w-full md:w-1/2 md:text-left order-2 md:order-1">
+            <div className="timeline-content mt-2 md:mt-0 ml-8 md:ml-16 w-full md:w-1/2 md:text-left order-2 md:order-1">
               <h2 className="text-2xl md:text-3xl text-red-500 mb-4">
                 Northeastern University
               </h2>
@@ -134,20 +134,20 @@ export default function AboutMe() {
 
           <div className="timeline-item relative flex flex-col md:flex-row items-start md:items-center mb-12">
             <div className="timeline-dot bg-green-500 absolute left-2 md:left-1/2 transform -translate-x-1/2 -translate-y-1/2"></div>
-            <div className="timeline-logo mb-4 md:mb-0 md:mt-0 ml-8 md:ml-16 w-full md:w-1/2 text-center md:text-left flex flex-col items-center md:items-start order-1 md:order-2">
+            <div className="timeline-logo mb-2 md:mb-0 md:mt-0 ml-8 md:ml-16 w-full md:w-1/2 text-center md:text-left flex flex-col items-center md:items-start order-1 md:order-2">
               <Image
                 src="/images/hexagon_logo.jpg"
                 alt="Hexagon Logo"
                 width={200}
                 height={80}
-                className="mb-4"
+                className="mb-2"
                 style={{ height: 'auto' }}
               />
               <p className="text-base md:text-lg text-gray-500 font-semibold">
                 July 2021 - December 2023
               </p>
             </div>
-            <div className="timeline-content mt-6 md:mt-0 mr-8 md:mr-16 w-full md:w-1/2 md:text-right order-2 md:order-1">
+            <div className="timeline-content mt-2 md:mt-0 mr-8 md:mr-16 w-full md:w-1/2 md:text-right order-2 md:order-1">
               <h2 className="text-2xl md:text-3xl text-green-500 mb-4">
                 Hexagon India Pvt. Ltd.
               </h2>
@@ -170,20 +170,20 @@ export default function AboutMe() {
 
           <div className="timeline-item relative flex flex-col md:flex-row-reverse items-start md:items-center mb-12">
             <div className="timeline-dot bg-blue-500 absolute left-2 md:left-1/2 transform -translate-x-1/2 -translate-y-1/2"></div>
-            <div className="timeline-logo mb-4 md:mb-0 md:mt-0 ml-8 md:mr-8 md:ml-0 md:mr-16 w-full md:w-1/2 text-center md:text-right flex flex-col items-center md:items-end order-1 md:order-2">
+            <div className="timeline-logo mb-2 md:mb-0 md:mt-0 ml-8 md:mr-8 md:ml-0 md:mr-16 w-full md:w-1/2 text-center md:text-right flex flex-col items-center md:items-end order-1 md:order-2">
               <Image
                 src="/images/tcs_ion_logo.png"
                 alt="TCS iON Logo"
                 width={200}
                 height={80}
-                className="mb-4"
+                className="mb-2"
                 style={{ height: 'auto' }}
               />
               <p className="text-base md:text-lg text-gray-500 font-semibold">
                 September 2019 - June 2021
               </p>
             </div>
-            <div className="timeline-content mt-6 md:mt-0 ml-8 md:ml-16 w-full md:w-1/2 md:text-left order-2 md:order-1">
+            <div className="timeline-content mt-2 md:mt-0 ml-8 md:ml-16 w-full md:w-1/2 md:text-left order-2 md:order-1">
               <h2 className="text-2xl md:text-3xl text-blue-500 mb-4">
                 Tata Consultancy Services
               </h2>
@@ -206,13 +206,14 @@ export default function AboutMe() {
 
           <div className="timeline-item relative flex flex-col md:flex-row items-start md:items-center mb-12">
             <div className="timeline-dot bg-yellow-500 absolute left-2 md:left-1/2 transform -translate-x-1/2 -translate-y-1/2"></div>
-            <div className="timeline-logo mb-4 md:mb-0 md:mt-0 ml-8 md:ml-16 w-full md:w-1/2 text-center md:text-left flex flex-col items-center md:items-start order-1 md:order-2">
-              <div className="flex gap-4 mb-4">
+            <div className="timeline-logo mb-2 md:mb-0 md:mt-0 ml-8 md:ml-16 w-full md:w-1/2 text-center md:text-left flex flex-col items-center md:items-start order-1 md:order-2">
+              <div className="flex gap-4 mb-2">
                 <Image
                   src="/images/crac_logo.png"
                   alt="CRAC Logo"
                   width={100}
                   height={60}
+                  className="mb-2"
                   style={{ height: 'auto' }}
                 />
                 <Image
@@ -220,6 +221,7 @@ export default function AboutMe() {
                   alt="4C Plus Logo"
                   width={100}
                   height={60}
+                  className="mb-2"
                   style={{ height: 'auto' }}
                 />
               </div>
@@ -230,7 +232,7 @@ export default function AboutMe() {
                 & February 2019 - August 2019
               </p>
             </div>
-            <div className="timeline-content mt-6 md:mt-0 mr-8 md:mr-16 w-full md:w-1/2 md:text-right order-2 md:order-1">
+            <div className="timeline-content mt-2 md:mt-0 mr-8 md:mr-16 w-full md:w-1/2 md:text-right order-2 md:order-1">
               <h2 className="text-2xl md:text-3xl text-yellow-500 mb-4">
                 CRAC Infosystem Private Limited & Four C Plus (Internet) Company
               </h2>
@@ -249,20 +251,20 @@ export default function AboutMe() {
           </div>
           <div className="timeline-item relative flex flex-col md:flex-row-reverse items-start md:items-center mb-12">
             <div className="timeline-dot bg-purple-900 absolute left-2 md:left-1/2 transform -translate-x-1/2 -translate-y-1/2"></div>
-            <div className="timeline-logo mb-4 md:mb-0 md:mt-0 ml-8 md:mr-8 md:ml-0 md:mr-16 w-full md:w-1/2 text-center md:text-right flex flex-col items-center md:items-end order-1 md:order-2">
+            <div className="timeline-logo mb-2 md:mb-0 md:mt-0 ml-8 md:mr-8 md:ml-0 md:mr-16 w-full md:w-1/2 text-center md:text-right flex flex-col items-center md:items-end order-1 md:order-2">
               <Image
                 src="/images/bml_logo.png"
                 alt="BML Munjal University Logo"
                 width={200}
                 height={80}
-                className="mb-4"
+                className="mb-2"
                 style={{ height: 'auto' }}
               />
               <p className="text-base md:text-lg text-gray-500 font-semibold">
                 September 2015 - September 2019
               </p>
             </div>
-            <div className="timeline-content mt-6 md:mt-0 ml-8 md:ml-16 w-full md:w-1/2 md:text-left order-2 md:order-1">
+            <div className="timeline-content mt-2 md:mt-0 ml-8 md:ml-16 w-full md:w-1/2 md:text-left order-2 md:order-1">
               <h2 className="text-2xl md:text-3xl text-purple-900 mb-4">
                 BML Munjal University
               </h2>
