@@ -305,7 +305,7 @@ const ProjectsPage: React.FC = () => {
                 </h3>
                 <h1 className="text-2xl font-bold">
                   <a
-                    href="https://github.com/pankhuri0209/WyckoffTradingAssistant"
+                    href="https://github.com/pankhuri0209/Transformer-based-Richard-Wyckoff-Trading-Assistant"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="hover:underline"
@@ -318,7 +318,7 @@ const ProjectsPage: React.FC = () => {
                 </p>
                 <div className="flex justify-start mt-4">
                   <a
-                    href="https://github.com/pankhuri0209/WyckoffTradingAssistant"
+                    href="https://github.com/pankhuri0209/Transformer-based-Richard-Wyckoff-Trading-Assistant"
                     target="_blank"
                     rel="noopener noreferrer"
                   >

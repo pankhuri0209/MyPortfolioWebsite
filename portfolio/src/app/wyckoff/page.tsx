@@ -138,7 +138,7 @@ const WyckoffPage = () => {
       <div className="container mx-auto px-8 md:px-32 mb-16">
         <div className="text-center">
           <a
-            href="https://github.com/pankhuri0209/WyckoffTradingAssistant"
+            href="https://github.com/pankhuri0209/Transformer-based-Richard-Wyckoff-Trading-Assistant"
             target="_blank"
             rel="noopener noreferrer"
             className="inline-block"
