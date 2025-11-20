@@ -1,0 +1,81 @@
+# Portfolio Project
+
+## Overview
+This is a Next.js portfolio website showcasing projects, blog posts, and professional experience. The site features a modern UI built with Next.js 14, React, TailwindCSS, and NextUI components.
+
+## Recent Changes (November 20, 2025)
+- **Migrated from Vercel to Replit**: Updated configuration for Replit environment compatibility
+- **Port Configuration**: Modified dev and start scripts to bind to port 5000 on host 0.0.0.0
+- **Workflow Setup**: Configured automatic development server startup
+- **Deployment Configuration**: Set up autoscale deployment with production build process
+
+## Project Architecture
+
+### Technology Stack
+- **Framework**: Next.js 14.2.23 with App Router
+- **UI Framework**: React 18.3.1
+- **Styling**: TailwindCSS 3.4.1
+- **Component Library**: NextUI 2.x
+- **Icons**: React Icons 5.2.1
+- **Animations**: Framer Motion 11.2.10
+- **Carousel**: React Slick 0.30.2
+
+### Project Structure
+```
+portfolio/
+├── src/
+│   └── app/           # Next.js App Router pages
+│       ├── aboutme/
+│       ├── blog/
+│       ├── cloud/
+│       ├── components/  # Reusable components (Navbar, Footer, Slider)
+│       ├── contact/
+│       ├── elderlycare/
+│       ├── hackathons/
+│       ├── projects/
+│       ├── secureshare/
+│       └── page.tsx   # Home page
+├── public/            # Static assets
+│   └── images/       # Project screenshots, tech icons, etc.
+├── next.config.mjs   # Next.js configuration
+├── tailwind.config.ts # TailwindCSS configuration
+└── package.json      # Dependencies and scripts
+```
+
+## Development
+
+### Running Locally
+The development server automatically starts on port 5000:
+- Access the site at the Replit webview URL
+- Hot reload is enabled for all file changes
+- Server binds to 0.0.0.0:5000 for Replit compatibility
+
+### Scripts
+- `npm run dev`: Start development server (port 5000)
+- `npm run build`: Create production build
+- `npm run start`: Start production server (port 5000)
+- `npm run lint`: Run ESLint
+
+### Dependencies
+All dependencies are managed via npm. The project uses:
+- Next.js with TypeScript
+- TailwindCSS for styling
+- NextUI for UI components
+- React Slick for carousels
+- Framer Motion for animations
+
+## Deployment
+The project is configured for Replit's autoscale deployment:
+- **Build Command**: `npm install && npm run build`
+- **Start Command**: `npm run start`
+- Ready to publish directly from Replit
+
+## Security Notes
+- No environment variables or API keys are currently required
+- All data is static (no database connections)
+- Client-side only application with no server-side API routes
+- Dependencies include some vulnerabilities (11 total) - run `npm audit` to review
+
+## Known Issues
+- 11 npm package vulnerabilities detected (1 low, 4 moderate, 5 high, 1 critical)
+- Consider running `npm audit fix` to address non-breaking issues
