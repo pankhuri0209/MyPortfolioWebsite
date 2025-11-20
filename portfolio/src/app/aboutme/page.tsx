@@ -176,6 +176,19 @@ export default function AboutMe() {
                 high-stakes environment.
               </p>
             </div>
+            <div className="timeline-logo mt-6 md:mt-0 ml-8 md:ml-16 w-full md:w-1/2 md:text-left hidden md:flex flex-col items-start">
+              <Image
+                src="/images/hexagon_logo.jpg"
+                alt="Hexagon Logo"
+                width={200}
+                height={80}
+                className="mb-4"
+                style={{ height: 'auto' }}
+              />
+              <p className="text-base md:text-lg text-gray-500 font-semibold">
+                July 2021 - December 2023
+              </p>
+            </div>
           </div>
 
           <div className="timeline-item relative flex flex-col md:flex-row-reverse items-start md:items-center mb-12">
