@@ -98,7 +98,7 @@ export default function AboutMe() {
                 className="mb-4"
                 style={{ height: 'auto' }}
               />
-              <p className="text-base md:text-lg text-gray-300 font-semibold">
+              <p className="text-base md:text-lg text-gray-600 font-semibold">
                 May 2025 - August 2025
               </p>
             </div>
