@@ -280,7 +280,7 @@ const ProjectsPage: React.FC = () => {
           isBlurred
           className="border-none bg-background/60 dark:bg-default-100/50 w-full max-w-[1150px] rounded-none"
           shadow="sm"
-          style={{ backgroundColor: "#E8F4FDFF" }}
+          style={{ backgroundColor: "#F3E5F5" }}
         >
           <CardBody>
             <div className="grid grid-cols-12 gap-6 md:gap-8 items-center">
