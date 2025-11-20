@@ -71,19 +71,6 @@ export default function AboutMe() {
         <div className="relative z-10 w-full">
           <div className="timeline-item relative flex flex-col md:flex-row items-start md:items-center mb-12">
             <div className="timeline-dot bg-orange-500 absolute left-2 md:left-1/2 transform -translate-x-1/2 -translate-y-1/2"></div>
-            <div className="timeline-logo mt-6 md:mt-0 ml-8 md:ml-16 w-full md:w-1/2 md:text-left hidden md:flex flex-col items-start">
-              <Image
-                src="/images/aws_marketplace_logo.png"
-                alt="AWS Marketplace Logo"
-                width={200}
-                height={80}
-                className="mb-4"
-                style={{ height: 'auto' }}
-              />
-              <p className="text-base md:text-lg text-gray-300 font-semibold">
-                May 2025 - August 2025
-              </p>
-            </div>
             <div className="timeline-content mt-6 md:mt-0 mr-8 md:mr-16 w-full md:w-1/2 md:text-right">
               <h2 className="text-2xl md:text-3xl text-orange-500 mb-4">
                 Amazon Web Services (AWS)- SDE Intern
@@ -100,6 +87,19 @@ export default function AboutMe() {
                 reliability, validated purchase order metadata, and helped
                 detect silent failures, reducing manual escalations and issue
                 resolution time from days to under two hours.
+              </p>
+            </div>
+            <div className="timeline-logo mt-6 md:mt-0 ml-8 md:ml-16 w-full md:w-1/2 md:text-left hidden md:flex flex-col items-start">
+              <Image
+                src="/images/aws_marketplace_logo.png"
+                alt="AWS Marketplace Logo"
+                width={200}
+                height={80}
+                className="mb-4"
+                style={{ height: 'auto' }}
+              />
+              <p className="text-base md:text-lg text-gray-300 font-semibold">
+                May 2025 - August 2025
               </p>
             </div>
           </div>
