@@ -12,6 +12,7 @@ This is a Next.js portfolio website showcasing projects, blog posts, and profess
 - **Wyckoff Trading Assistant Project**: Added dedicated project page at /wyckoff with comprehensive features, technology stack, and project details
 - **Project Cards Color Scheme**: Implemented distinct background colors for each project (Elderlycare: green, Secure Social Share: pink, Wyckoff: light blue, Cloud Native: light yellow)
 - **Updated Content**: Refined Wyckoff project description to be concise and focused on key features
+- **Fixed Vercel Deployment**: Replaced deprecated `node-sass` with modern `sass` (Dart Sass) to fix build errors on Vercel
 
 ## Project Architecture
 
@@ -69,6 +70,7 @@ All dependencies are managed via npm. The project uses:
 - NextUI for UI components
 - React Slick for carousels
 - Framer Motion for animations
+- Modern `sass` (Dart Sass) - replaces deprecated `node-sass` via package overrides
 
 ## Deployment
 The project is configured for Replit's autoscale deployment:
