@@ -52,6 +52,12 @@ const ProjectsPage: React.FC = () => {
                     Developed <strong>secure REST APIs</strong> and GraphQL
                     services for efficient data communication.
                   </li>
+                  <li>
+                    Created a{" "}
+                    <strong>Meeting Notes Application</strong> with vanilla
+                    JavaScript, featuring CRUD operations, dynamic action item
+                    management, and smooth CSS transitions.
+                  </li>
                 </ul>
               </div>
 
@@ -95,24 +101,33 @@ const ProjectsPage: React.FC = () => {
                 </ul>
               </div>
 
-              {/* AI & Robotics */}
+              {/* AI & Machine Learning */}
               <div>
                 <h2 className="text-2xl font-semibold flex items-center">
-                  🤖 AI & Robotics
+                  🤖 AI & Machine Learning
                 </h2>
                 <ul className="list-disc list-inside pl-5">
                   <li>
-                    Built a{" "}
+                    Built an{" "}
+                    <strong>AI-powered Wyckoff Trading Assistant</strong> using
+                    PyTorch Transformer neural networks trained on 1,187 Q&A
+                    pairs for market analysis.
+                  </li>
+                  <li>
+                    Implemented{" "}
+                    <strong>reinforcement learning algorithms</strong>{" "}
+                    (Q-learning) for automated trading strategies with
+                    backtesting on historical stock data.
+                  </li>
+                  <li>
+                    Developed a{" "}
                     <strong>computer vision-powered control system</strong> for
-                    the <strong>Kinova Robotic Arm</strong>.
+                    the <strong>Kinova Robotic Arm</strong> with path-planning
+                    algorithms.
                   </li>
                   <li>
-                    Developed <strong>robotic path-planning algorithms</strong>{" "}
-                    for autonomous navigation.
-                  </li>
-                  <li>
-                    Optimized <strong>sensor fusion techniques</strong> to
-                    enhance robotic precision.
+                    Optimized <strong>sensor fusion techniques</strong> and
+                    robotic path-planning for autonomous navigation.
                   </li>
                 </ul>
               </div>

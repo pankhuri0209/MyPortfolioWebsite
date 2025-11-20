@@ -20,7 +20,7 @@ This is a Next.js portfolio website showcasing projects, blog posts, and profess
   - Vercel now successfully connected to correct repository: `pankhuri0209/MyPortfolioWebsite`
   - Build compilation successful with all linting checks passing
 - **Fixed Project Navigation**: Changed Wyckoff "View Project" button to navigate to /wyckoff page instead of external GitHub link, maintaining consistent internal navigation for projects with dedicated detail pages
-- **Projects Page Content Structure**: Maintains original four-section layout (Web & Cloud Solutions, Data & GIS Applications, Blockchain & FinTech, AI & Robotics) with detailed bullet points showcasing technical expertise and project capabilities
+- **Projects Page Content Structure**: Updated four-section layout to include new projects - added Wyckoff Trading Assistant (AI-powered trading with PyTorch Transformers and Q-learning) and Meeting Notes Application (vanilla JavaScript with CRUD operations) to Web & Cloud Solutions and AI & Machine Learning sections
 - **Hidden Blog Menu Item**: Removed "Blog" from navigation menu in both desktop and mobile views to streamline site navigation
 
 ## Project Architecture
