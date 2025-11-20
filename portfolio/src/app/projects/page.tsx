@@ -437,7 +437,7 @@ const ProjectsPage: React.FC = () => {
                   className="font-semibold text-lg md:text-xl"
                   style={{ color: "#9C27B0" }}
                 >
-                  Web Design Course, Feb 2024
+                  Vanilla JavaScript, SCSS
                 </h3>
                 <h1 className="text-2xl font-bold">
                   <a
