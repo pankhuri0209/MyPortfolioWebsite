@@ -52,7 +52,7 @@ export default function AboutMe() {
             </div>
           </div>
         </div>
-        <div className="flex justify-center md:justify-end w-full md:w-auto">
+        <div className="hidden md:flex justify-center md:justify-end w-full md:w-auto">
           <Image
             src="/images/pics/pic3.png"
             alt="Profile Picture"
