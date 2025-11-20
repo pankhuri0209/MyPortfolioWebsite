@@ -70,7 +70,7 @@ export default function AboutMe() {
         <div className="relative z-10 w-full">
           <div className="timeline-item relative flex flex-col md:flex-row items-start md:items-center mb-12">
             <div className="timeline-dot bg-orange-500 absolute left-2 md:left-1/2 transform -translate-x-1/2 -translate-y-1/2"></div>
-            <div className="timeline-logo mb-4 md:mb-0 md:mt-0 ml-8 md:ml-16 w-full md:w-1/2 md:text-left flex flex-col items-start order-1 md:order-2">
+            <div className="timeline-logo mb-4 md:mb-0 md:mt-0 ml-8 md:ml-16 w-full md:w-1/2 text-center md:text-left flex flex-col items-center md:items-start order-1 md:order-2">
               <Image
                 src="/images/aws_marketplace_logo.png"
                 alt="AWS Marketplace Logo"
@@ -104,7 +104,7 @@ export default function AboutMe() {
           </div>
           <div className="timeline-item relative flex flex-col md:flex-row-reverse items-start md:items-center mb-12">
             <div className="timeline-dot bg-red-500 absolute left-2 md:left-1/2 transform -translate-x-1/2 -translate-y-1/2"></div>
-            <div className="timeline-logo mb-4 md:mb-0 md:mt-0 ml-8 md:mr-8 md:ml-0 md:mr-16 w-full md:w-1/2 md:text-right flex flex-col items-start md:items-end order-1 md:order-2">
+            <div className="timeline-logo mb-4 md:mb-0 md:mt-0 ml-8 md:mr-8 md:ml-0 md:mr-16 w-full md:w-1/2 text-center md:text-right flex flex-col items-center md:items-end order-1 md:order-2">
               <Image
                 src="/images/neu_logo.png"
                 alt="Northeastern University Logo"
@@ -134,7 +134,7 @@ export default function AboutMe() {
 
           <div className="timeline-item relative flex flex-col md:flex-row items-start md:items-center mb-12">
             <div className="timeline-dot bg-green-500 absolute left-2 md:left-1/2 transform -translate-x-1/2 -translate-y-1/2"></div>
-            <div className="timeline-logo mb-4 md:mb-0 md:mt-0 ml-8 md:ml-16 w-full md:w-1/2 md:text-left flex flex-col items-start order-1 md:order-2">
+            <div className="timeline-logo mb-4 md:mb-0 md:mt-0 ml-8 md:ml-16 w-full md:w-1/2 text-center md:text-left flex flex-col items-center md:items-start order-1 md:order-2">
               <Image
                 src="/images/hexagon_logo.jpg"
                 alt="Hexagon Logo"
@@ -170,7 +170,7 @@ export default function AboutMe() {
 
           <div className="timeline-item relative flex flex-col md:flex-row-reverse items-start md:items-center mb-12">
             <div className="timeline-dot bg-blue-500 absolute left-2 md:left-1/2 transform -translate-x-1/2 -translate-y-1/2"></div>
-            <div className="timeline-logo mb-4 md:mb-0 md:mt-0 ml-8 md:mr-8 md:ml-0 md:mr-16 w-full md:w-1/2 md:text-right flex flex-col items-start md:items-end order-1 md:order-2">
+            <div className="timeline-logo mb-4 md:mb-0 md:mt-0 ml-8 md:mr-8 md:ml-0 md:mr-16 w-full md:w-1/2 text-center md:text-right flex flex-col items-center md:items-end order-1 md:order-2">
               <Image
                 src="/images/tcs_ion_logo.png"
                 alt="TCS iON Logo"
@@ -206,7 +206,7 @@ export default function AboutMe() {
 
           <div className="timeline-item relative flex flex-col md:flex-row items-start md:items-center mb-12">
             <div className="timeline-dot bg-yellow-500 absolute left-2 md:left-1/2 transform -translate-x-1/2 -translate-y-1/2"></div>
-            <div className="timeline-logo mb-4 md:mb-0 md:mt-0 ml-8 md:ml-16 w-full md:w-1/2 md:text-left flex flex-col items-start order-1 md:order-2">
+            <div className="timeline-logo mb-4 md:mb-0 md:mt-0 ml-8 md:ml-16 w-full md:w-1/2 text-center md:text-left flex flex-col items-center md:items-start order-1 md:order-2">
               <div className="flex gap-4 mb-4">
                 <Image
                   src="/images/crac_logo.png"
@@ -249,7 +249,7 @@ export default function AboutMe() {
           </div>
           <div className="timeline-item relative flex flex-col md:flex-row-reverse items-start md:items-center mb-12">
             <div className="timeline-dot bg-purple-900 absolute left-2 md:left-1/2 transform -translate-x-1/2 -translate-y-1/2"></div>
-            <div className="timeline-logo mb-4 md:mb-0 md:mt-0 ml-8 md:mr-8 md:ml-0 md:mr-16 w-full md:w-1/2 md:text-right flex flex-col items-start md:items-end order-1 md:order-2">
+            <div className="timeline-logo mb-4 md:mb-0 md:mt-0 ml-8 md:mr-8 md:ml-0 md:mr-16 w-full md:w-1/2 text-center md:text-right flex flex-col items-center md:items-end order-1 md:order-2">
               <Image
                 src="/images/bml_logo.png"
                 alt="BML Munjal University Logo"
