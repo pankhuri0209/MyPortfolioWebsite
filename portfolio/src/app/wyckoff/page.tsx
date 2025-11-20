@@ -1,8 +1,6 @@
 import React from "react";
-import Image from "next/image";
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
-import { Card, CardBody } from "@nextui-org/react";
 
 const WyckoffPage = () => {
   return (
@@ -31,7 +29,7 @@ const WyckoffPage = () => {
           <br />
           <div className="w-full mt-8 md:mt-0">
             <p>
-              Wyckoff Trading Assistant is an intelligent web application that combines a Transformer-based AI chatbot with reinforcement learning to help traders analyze stocks using Richard Wyckoff's methodology. The system features a PyTorch-powered neural network trained on 1,187 Wyckoff Q&A pairs to answer questions about market structure, accumulation, distribution, springs, and upthrusts, while a Q-learning algorithm learns optimal trading strategies through backtesting on historical data. Built with Flask, the application fetches real-time stock data via yfinance, enriches it with technical indicators (Moving Averages, RSI, Bollinger Bands), and visualizes results through an interactive Chart.js dashboard, providing both educational insights into Wyckoff principles and practical algorithmic trading analysis with customizable backtesting parameters.
+              Wyckoff Trading Assistant is an intelligent web application that combines cutting-edge artificial intelligence with quantitative trading strategies to help traders analyze stock markets through the lens of Richard Wyckoff's time-tested methodology. Built on Flask and PyTorch, the application features two powerful components: an AI-powered chatbot that leverages a custom-trained Transformer neural network (with 6 encoder-decoder layers and 8 attention heads) to answer complex questions about Wyckoff principles including accumulation, distribution, springs, upthrusts, and market structure analysis; and a Reinforcement Learning trading engine that implements Q-learning algorithms to discover optimal buy/sell/hold strategies through backtesting on historical stock data. The system automatically fetches real-time market data via yfinance, enriches it with technical indicators (Moving Averages, RSI, Bollinger Bands, On-Balance Volume), and visualizes results through an interactive Chart.js dashboard. The chatbot, trained on 1,187 curated Wyckoff Q&A pairs, can intelligently respond to trading methodology queries, while the RL agent learns profitable trading patterns by training across 1,000 episodes, discretizing price-position states into a Q-table to maximize portfolio returns. With fallback mechanisms for both data fetching and model inference, robust error handling, and a responsive web interface, this full-stack application serves as both an educational tool for learning Wyckoff analysis and a practical backtesting platform for evaluating algorithmic trading strategies across any stock symbol with customizable parameters including date ranges and initial capital allocations.
             </p>
           </div>
         </div>
