@@ -172,6 +172,25 @@ const Pay2FlixPage = () => {
             </button>
           </a>
           <a
+            href="https://www.canva.com/design/DAGWDWaGTq4/d15LBkT3poUFl-7x5B6QLQ/edit"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <button className="button">
+              View Pitch Deck
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 25 25"
+                className="icon w-4 h-4"
+              >
+                <path
+                  style={{ fill: "#232326" }}
+                  d="M24 12.001H2.914l5.294-5.295-.707-.707L1 12.501l6.5 6.5.707-.707-5.293-5.293H24v-1z"
+                />
+              </svg>
+            </button>
+          </a>
+          <a
             href="https://x.com/easya_app/status/1856050187623641582"
             target="_blank"
             rel="noopener noreferrer"
