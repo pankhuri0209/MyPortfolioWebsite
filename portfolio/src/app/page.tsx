@@ -35,7 +35,6 @@ const Home: React.FC = () => {
         className="font-semibold text-foreground/90 text-2xl flex items-center gap-2"
         style={{ color: "#E34D73FF" }}
       >
-        Dr. Purnendu Shekhar Pandey
         <a
           href="https://www.linkedin.com/in/dr-purnendu-shekhar-pandey/"
           target="_blank"
@@ -44,6 +43,7 @@ const Home: React.FC = () => {
         >
           <FaLinkedin size={24} style={{ color: "#0A66C2" }} />
         </a>
+        Dr. Purnendu Shekhar Pandey
       </h2>
       <br />
       <h2
@@ -82,7 +82,6 @@ const Home: React.FC = () => {
         className="font-semibold text-foreground/90 text-2xl flex items-center gap-2"
         style={{ color: "#E34D73FF" }}
       >
-        Naresh Sharma
         <a
           href="https://www.linkedin.com/in/naresh-kr-sharma/"
           target="_blank"
@@ -91,6 +90,7 @@ const Home: React.FC = () => {
         >
           <FaLinkedin size={24} style={{ color: "#0A66C2" }} />
         </a>
+        Naresh Sharma
       </h2>
       <br />
       <h2
@@ -120,7 +120,6 @@ const Home: React.FC = () => {
         className="font-semibold text-foreground/90 text-2xl flex items-center gap-2"
         style={{ color: "#E34D73FF" }}
       >
-        Shivangi Pandey
         <a
           href="https://www.linkedin.com/in/shivangi-pandey-7047871b0/"
           target="_blank"
@@ -129,6 +128,7 @@ const Home: React.FC = () => {
         >
           <FaLinkedin size={24} style={{ color: "#0A66C2" }} />
         </a>
+        Shivangi Pandey
       </h2>
       <br />
       <h2
