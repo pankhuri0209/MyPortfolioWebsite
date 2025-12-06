@@ -400,6 +400,71 @@ const HackathonsPage: React.FC = () => {
             </div>
           </CardBody>
         </Card>
+
+        {/* VoteMatch - Voter Hackathon Project Card */}
+        <Card
+          isBlurred
+          className="border-none bg-background/60 dark:bg-default-100/50 w-full max-w-[1150px] rounded-none"
+          shadow="sm"
+          style={{ backgroundColor: "#E8F5E9" }}
+        >
+          <CardBody>
+            <div className="grid grid-cols-12 gap-6 md:gap-8 items-center">
+              <div className="col-span-12 md:col-span-5 flex justify-center">
+                <div className="flex items-center justify-center w-full h-48 md:h-64 rounded-lg" style={{ backgroundColor: "#2E7D32" }}>
+                  <div className="text-center text-white p-6">
+                    <div className="text-6xl mb-4">🗳️</div>
+                    <div className="text-2xl font-bold">VoteMatch</div>
+                    <div className="text-sm opacity-90">Find Your Candidate</div>
+                  </div>
+                </div>
+              </div>
+
+              <div className="col-span-12 md:col-span-7">
+                <h3
+                  className="font-semibold text-lg md:text-xl"
+                  style={{ color: "#1B5E20" }}
+                >
+                  Python, JavaScript, HTML/CSS
+                </h3>
+                <h1 className="text-2xl font-bold">
+                  <a
+                    href="https://github.com/pankhuri0209/Voter_hackthon"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="hover:underline"
+                  >
+                    VoteMatch - Voter Recommendation System
+                  </a>
+                </h1>
+                <p className="text-base md:text-lg text-foreground/80 leading-relaxed">
+                  A civic tech application that helps voters find candidates
+                  matching their political views. Uses a weighted distance algorithm
+                  to compare user responses on key issues with candidate positions,
+                  providing personalized voting recommendations.
+                </p>
+                <div className="flex flex-wrap gap-3 mt-4">
+                  <a
+                    href="https://github.com/pankhuri0209/Voter_hackthon"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="flex items-center gap-2 px-4 py-2 bg-gray-900 text-white rounded-lg hover:bg-gray-700 transition-colors text-sm"
+                  >
+                    GitHub
+                  </a>
+                  <a
+                    href="https://voter-hackthon.vercel.app"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="flex items-center gap-2 px-4 py-2 bg-green-600 text-white rounded-lg hover:bg-green-700 transition-colors text-sm"
+                  >
+                    Live Demo
+                  </a>
+                </div>
+              </div>
+            </div>
+          </CardBody>
+        </Card>
       </div>
 
       <br />
