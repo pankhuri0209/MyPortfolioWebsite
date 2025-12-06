@@ -4,7 +4,7 @@ import React from "react";
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
 import Link from "next/link";
-import { FaGithub, FaYoutube } from "react-icons/fa";
+import { FaGithub, FaYoutube, FaLinkedin } from "react-icons/fa";
 import { SiCanva } from "react-icons/si";
 
 const RootBeerPage: React.FC = () => {
@@ -86,6 +86,15 @@ const RootBeerPage: React.FC = () => {
               >
                 <SiCanva size={20} />
                 Presentation
+              </a>
+              <a
+                href="https://www.linkedin.com/posts/pankhurigupta0209_web3gaming-supplychainexcellence-nft-activity-7242741410850902016-XxO-"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex items-center gap-2 px-6 py-3 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition-colors"
+              >
+                <FaLinkedin size={20} />
+                LinkedIn Post
               </a>
             </div>
           </div>
