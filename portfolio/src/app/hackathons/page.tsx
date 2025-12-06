@@ -140,7 +140,7 @@ const HackathonsPage: React.FC = () => {
                   <img
                     src="/images/securesocialshare/lock.jpg"
                     alt="Secure Social Share"
-                    className="w-24 h-24 md:w-40 md:h-40 object-contain flex-shrink-0"
+                    className="w-full h-auto md:w-full md:h-auto object-contain flex-shrink-0"
                   />
                 </div>
               </div>

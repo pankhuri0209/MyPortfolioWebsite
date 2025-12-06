@@ -238,8 +238,8 @@ const ProjectsPage: React.FC = () => {
                 <div className="flex space-x-4">
                   <img
                     src="/images/securesocialshare/lock.jpg"
-                    alt="Logo"
-                    className="w-24 h-24 md:w-40 md:h-40 object-contain flex-shrink-0"
+                    alt="Secure Social Share"
+                    className="w-full h-auto md:w-full md:h-auto object-contain flex-shrink-0"
                   />
                 </div>
               </div>
