@@ -133,6 +133,21 @@ const WebNovaPage = () => {
         <br />
         <br />
 
+        <div className="text-center md:text-left">
+          <h2 className="text-2xl md:text-3xl font-semibold">
+            Achievement Certificate
+          </h2>
+          <div className="flex justify-center mt-6">
+            <img
+              src="/images/hackathons/webnova-2nd-place-certificate.jpg"
+              alt="WebNova II Space App Hackathon - 2nd Place Certificate for Pankhuri Gupta"
+              className="w-full max-w-2xl rounded-lg shadow-lg"
+            />
+          </div>
+        </div>
+        <br />
+        <br />
+
         <div className="flex justify-center space-x-4">
           <a
             href="https://github.com/pankhuri0209/webnovaContainers"
