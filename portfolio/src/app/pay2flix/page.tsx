@@ -136,14 +136,48 @@ const Pay2FlixPage = () => {
         <br />
         <br />
 
-        <div className="flex justify-center space-x-4">
+        <div className="text-center md:text-left">
+          <h2 className="text-2xl md:text-3xl font-semibold">
+            Hackathon Highlights
+          </h2>
+          <div className="flex justify-center mt-6">
+            <img
+              src="/images/hackathons/pay2flix-hackathon-group.jpg"
+              alt="EasyA Stacks Harvard Hackathon Group Photo"
+              className="w-full max-w-2xl rounded-lg shadow-lg"
+            />
+          </div>
+        </div>
+        <br />
+        <br />
+
+        <div className="flex flex-wrap justify-center gap-4">
           <a
             href="https://x.com/easya_app/status/1856050187623641582"
             target="_blank"
             rel="noopener noreferrer"
           >
             <button className="button">
-              View Announcement
+              View on X
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 25 25"
+                className="icon w-4 h-4"
+              >
+                <path
+                  style={{ fill: "#232326" }}
+                  d="M24 12.001H2.914l5.294-5.295-.707-.707L1 12.501l6.5 6.5.707-.707-5.293-5.293H24v-1z"
+                />
+              </svg>
+            </button>
+          </a>
+          <a
+            href="https://www.linkedin.com/posts/pankhurigupta0209_blockchain-netflix-smartcontracts-activity-7262210907152248833-UKrZ"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <button className="button">
+              View on LinkedIn
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 viewBox="0 0 25 25"
