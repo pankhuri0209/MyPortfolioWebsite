@@ -203,8 +203,8 @@ const HackathonsPage: React.FC = () => {
               <div className="col-span-12 md:col-span-5 flex justify-center">
                 <div className="flex space-x-4">
                   <img
-                    src="/images/hackathons/pay2flix-team-photo.jpg"
-                    alt="Pay2Flix Team at EasyA Stacks Harvard Hackathon"
+                    src="/images/hackathons/pay2flix-banner.png"
+                    alt="Pay2Flix - Pay for what you watch"
                     className="w-full h-auto md:w-full md:h-auto object-contain flex-shrink-0"
                   />
                 </div>
