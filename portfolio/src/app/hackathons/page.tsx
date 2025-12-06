@@ -319,6 +319,87 @@ const HackathonsPage: React.FC = () => {
             </div>
           </CardBody>
         </Card>
+
+        {/* GoalForge - InnovAIte Hackathon Project Card */}
+        <Card
+          isBlurred
+          className="border-none bg-background/60 dark:bg-default-100/50 w-full max-w-[1150px] rounded-none"
+          shadow="sm"
+          style={{ backgroundColor: "#E0F7FA" }}
+        >
+          <CardBody>
+            <div className="grid grid-cols-12 gap-6 md:gap-8 items-center">
+              <div className="col-span-12 md:col-span-5 flex justify-center">
+                <div className="flex items-center justify-center w-full h-48 md:h-64 rounded-lg" style={{ backgroundColor: "#00ACC1" }}>
+                  <div className="text-center text-white p-6">
+                    <div className="text-6xl mb-4">🎯</div>
+                    <div className="text-2xl font-bold">GoalForge</div>
+                    <div className="text-sm opacity-90">Career Navigator</div>
+                  </div>
+                </div>
+              </div>
+
+              <div className="col-span-12 md:col-span-7">
+                <h3
+                  className="font-semibold text-lg md:text-xl"
+                  style={{ color: "#00838F" }}
+                >
+                  AI, Node.js, JavaScript
+                </h3>
+                <h1 className="text-2xl font-bold">
+                  <a
+                    href="https://github.com/pankhuri0209/innovaite_hackathon"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="hover:underline"
+                  >
+                    GoalForge - NEU AI Club InnovAIte Hackathon
+                  </a>
+                </h1>
+                <p className="text-base md:text-lg text-foreground/80 leading-relaxed">
+                  A personalized career navigator powered by AI that helps users
+                  chart their professional development path. Built at Northeastern
+                  University&apos;s AI Club InnovAIte hackathon, featuring intelligent
+                  career recommendations and goal tracking.
+                </p>
+                <div className="flex flex-wrap gap-3 mt-4">
+                  <a
+                    href="https://github.com/pankhuri0209/innovaite_hackathon"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="flex items-center gap-2 px-4 py-2 bg-gray-900 text-white rounded-lg hover:bg-gray-700 transition-colors text-sm"
+                  >
+                    GitHub
+                  </a>
+                  <a
+                    href="https://docs.google.com/presentation/d/1e4_vJW68Mq7o54Mj0HYfYtTVIkKjWDs2isvj5aPs30Q/edit#slide=id.g2c7ccb6075c_0_141"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="flex items-center gap-2 px-4 py-2 bg-yellow-500 text-white rounded-lg hover:bg-yellow-600 transition-colors text-sm"
+                  >
+                    Presentation
+                  </a>
+                  <a
+                    href="https://www.figma.com/proto/LEESGAurYVGSSL3yQh86SO/innovaite-ui"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="flex items-center gap-2 px-4 py-2 bg-purple-600 text-white rounded-lg hover:bg-purple-700 transition-colors text-sm"
+                  >
+                    Figma Prototype
+                  </a>
+                  <a
+                    href="https://www.linkedin.com/posts/pankhurigupta0209_hackathon-aiinnovation-careerdevelopment-activity-7194061543720828929-ZZRZ"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="flex items-center gap-2 px-4 py-2 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition-colors text-sm"
+                  >
+                    LinkedIn
+                  </a>
+                </div>
+              </div>
+            </div>
+          </CardBody>
+        </Card>
       </div>
 
       <br />
