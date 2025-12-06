@@ -1,8 +1,8 @@
-"use client"; // This line ensures that the component is treated as a Client Component
+"use client";
 
 import React, { useEffect } from "react";
-import Navbar from "../components/Navbar"; // Ensure this path is correct
-import Footer from "../components/Footer"; // Ensure this path is correct
+import Navbar from "../components/Navbar";
+import Footer from "../components/Footer";
 import { Card, CardBody } from "@nextui-org/react";
 import Link from "next/link";
 
@@ -25,26 +25,178 @@ const HackathonsPage: React.FC = () => {
     <div>
       <Navbar />
 
-      <div className="container mx-auto flex flex-col md:flex-row items-center pt-32 px-8 md:px-32 space-y-8 md:space-y-0 md:space-x-8">
-        <div className="text-content md:w-1/2 text-center md:text-left">
-          <h1 className="text-4xl md:text-5xl font-semibold leading-tight">
-            Hackathons
-          </h1>
-          <br />
-          <br />
-          <div className="w-full mt-8 md:mt-0">
-            <p>Coming Soon!!!!!!!</p>
+      <div className="container mx-auto px-8 md:px-16 lg:px-24 xl:px-32 pt-32">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-12 items-start">
+          <div className="md:col-span-2 space-y-8">
+            <h1 className="text-4xl md:text-5xl font-semibold leading-tight">
+              Hackathons
+            </h1>
+
+            <div className="space-y-6 text-lg text-gray-700">
+              <p className="text-xl leading-relaxed">
+                I love participating in hackathons to solve real-world problems
+                through innovative technology solutions. Here are some of the
+                hackathon projects I&apos;ve worked on, showcasing my skills in
+                computer vision, blockchain, and full-stack development.
+              </p>
+            </div>
           </div>
-        </div>
-        <div className="flex justify-center items-center w-full md:w-1/2 md:justify-end">
-          <div className="circle">
-            <div className="logo">
-              <div className="text">
-                <p> HACKATHONS</p>
+
+          <div className="flex justify-center md:justify-end items-center">
+            <div className="circle">
+              <div className="logo">
+                <div className="text">
+                  <p className="uppercase tracking-wide font-semibold">
+                    Hackathons
+                  </p>
+                </div>
               </div>
             </div>
           </div>
         </div>
+      </div>
+
+      <br />
+      <br />
+
+      <div className="flex flex-col items-center space-y-16 mt-16 w-full">
+        {/* WebNova Container Challenge Project Card */}
+        <Card
+          isBlurred
+          className="border-none bg-background/60 dark:bg-default-100/50 w-full max-w-[1150px] rounded-none"
+          shadow="sm"
+          style={{ backgroundColor: "#E3F2FD" }}
+        >
+          <CardBody>
+            <div className="grid grid-cols-12 gap-6 md:gap-8 items-center">
+              <div className="col-span-12 md:col-span-5 flex justify-center">
+                <div className="flex space-x-4">
+                  <img
+                    src="/images/hackathons/webnova-container.png"
+                    alt="WebNova Container Challenge"
+                    className="w-full h-auto md:w-full md:h-auto object-contain flex-shrink-0"
+                  />
+                </div>
+              </div>
+
+              <div className="col-span-12 md:col-span-7">
+                <h3
+                  className="font-semibold text-lg md:text-xl"
+                  style={{ color: "#1565C0" }}
+                >
+                  Python, Computer Vision, Docker
+                </h3>
+                <h1 className="text-2xl font-bold">
+                  <a
+                    href="https://github.com/pankhuri0209/webnovaContainers"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="hover:underline"
+                  >
+                    WebNova Container Challenge
+                  </a>
+                </h1>
+                <p className="text-base md:text-lg text-foreground/80 leading-relaxed">
+                  A computer vision solution for counting differences in
+                  shipping containers between two satellite images of the same
+                  geographic location. The system uses SIFT (Scale-Invariant
+                  Feature Transform) detection and BruteForce matching
+                  algorithms to identify and compare containers. The distance
+                  difference against a threshold is used to calculate
+                  variations, outputting differential imagery and the count of
+                  container differences. Built with Python and containerized
+                  using Docker for easy deployment.
+                </p>
+                <div className="flex justify-start mt-4">
+                  <a
+                    href="https://github.com/pankhuri0209/webnovaContainers"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <button className="button">
+                      View Project
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 25 25"
+                        className="icon w-4 h-4"
+                      >
+                        <path
+                          style={{ fill: "#232326" }}
+                          d="M24 12.001H2.914l5.294-5.295-.707-.707L1 12.501l6.5 6.5.707-.707-5.293-5.293H24v-1z"
+                        />
+                      </svg>
+                    </button>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </CardBody>
+        </Card>
+
+        {/* Secure Social Share - ETHBoston 2024 Project Card */}
+        <Card
+          isBlurred
+          className="border-none bg-background/60 dark:bg-default-100/50 w-full max-w-[1150px] rounded-none"
+          shadow="sm"
+          style={{ backgroundColor: "#FDF2F4FF" }}
+        >
+          <CardBody>
+            <div className="grid grid-cols-12 gap-6 md:gap-8 items-center">
+              <div className="col-span-12 md:col-span-5 flex justify-center">
+                <div className="flex space-x-4">
+                  <img
+                    src="/images/securesocialshare/lock.jpg"
+                    alt="Secure Social Share"
+                    className="w-24 h-24 md:w-40 md:h-40 object-contain flex-shrink-0"
+                  />
+                </div>
+              </div>
+
+              <div className="col-span-12 md:col-span-7">
+                <h3
+                  className="font-semibold text-lg md:text-xl"
+                  style={{ color: "#E34D73FF" }}
+                >
+                  Blockchain, Frontend
+                </h3>
+                <h1 className="text-2xl font-bold">
+                  <a
+                    href="https://devpost.com/software/secure-social-share"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="hover:underline"
+                  >
+                    Secure Social Share - ETHBoston 2024
+                  </a>
+                </h1>
+                <p className="text-base md:text-lg text-foreground/80 leading-relaxed">
+                  An E2E encrypted data sharing system with strict, smart
+                  contract-based access control, allowing users to securely
+                  share sensitive information with their social circle in a
+                  decentralized way. Winner of multiple 1st place prizes at
+                  ETHBoston 2024.
+                </p>
+                <div className="flex justify-start mt-4">
+                  <Link href="/secureshare">
+                    <button className="button">
+                      View Project
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 25 25"
+                        className="icon w-4 h-4"
+                      >
+                        <path
+                          style={{ fill: "#232326" }}
+                          d="M24 12.001H2.914l5.294-5.295-.707-.707L1 12.501l6.5 6.5.707-.707-5.293-5.293H24v-1z"
+                        />
+                      </svg>
+                    </button>
+                  </Link>
+                </div>
+              </div>
+            </div>
+          </CardBody>
+        </Card>
       </div>
 
       <br />
