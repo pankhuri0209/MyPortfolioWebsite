@@ -5,6 +5,7 @@ import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
 import { Card, CardBody } from "@nextui-org/react";
 import Link from "next/link";
+import Image from "next/image";
 
 const HackathonsPage: React.FC = () => {
   useEffect(() => {
@@ -459,6 +460,74 @@ const HackathonsPage: React.FC = () => {
                     className="flex items-center gap-2 px-4 py-2 bg-green-600 text-white rounded-lg hover:bg-green-700 transition-colors text-sm"
                   >
                     Live Demo
+                  </a>
+                </div>
+              </div>
+            </div>
+          </CardBody>
+        </Card>
+
+        {/* Zenno Concierge - Agentic Payments Hackathon @ YC */}
+        <Card
+          isBlurred
+          className="border-none bg-background/60 dark:bg-default-100/50 w-full max-w-[1150px] rounded-none"
+          shadow="sm"
+          style={{ backgroundColor: "#FFF3E0" }}
+        >
+          <CardBody>
+            <div className="grid grid-cols-12 gap-6 md:gap-8 items-center">
+              <div className="col-span-12 md:col-span-5 flex justify-center">
+                <Image
+                  alt="Zenno Concierge at YC Hackathon"
+                  className="object-cover rounded-lg w-full"
+                  src="/images/hackathons/zenno-concierge.jpeg"
+                  width={500}
+                  height={350}
+                />
+              </div>
+
+              <div className="col-span-12 md:col-span-7">
+                <h3
+                  className="font-semibold text-lg md:text-xl"
+                  style={{ color: "#E65100" }}
+                >
+                  TypeScript, React, Anthropic Claude, Crypto Payments
+                </h3>
+                <h1 className="text-2xl font-bold">
+                  <a
+                    href="https://github.com/amanpal108/Zenno-Concierge"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="hover:underline"
+                  >
+                    Zenno Concierge - AI Shopping Assistant
+                  </a>
+                </h1>
+                <p className="text-sm text-gray-600 mb-2">
+                  Agentic Payments Hackathon by Locus @ Y Combinator HQ
+                </p>
+                <p className="text-base md:text-lg text-foreground/80 leading-relaxed">
+                  An AI-powered concierge for purchasing authentic Banarasi sarees
+                  through natural conversation. Features automated vendor discovery,
+                  Hindi phone negotiations, and seamless USDC cryptocurrency payments
+                  on Base blockchain via Locus Wallet.
+                </p>
+                <div className="flex flex-wrap gap-3 mt-4">
+                  <a
+                    href="https://github.com/amanpal108/Zenno-Concierge"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="flex items-center gap-2 px-4 py-2 bg-gray-900 text-white rounded-lg hover:bg-gray-700 transition-colors text-sm"
+                  >
+                    GitHub
+                  </a>
+                  <a
+                    href="https://www.linkedin.com/posts/pankhurigupta0209_agenticai-locus-ycombinator-activity-7396791350232297472-DKbv"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="flex items-center gap-2 px-4 py-2 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition-colors text-sm"
+                  >
+                    LinkedIn
                   </a>
                 </div>
               </div>
