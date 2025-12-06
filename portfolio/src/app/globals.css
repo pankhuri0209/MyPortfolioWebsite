@@ -64,6 +64,14 @@ body {
   width: 165px;
   height: 175px;
 }
+
+@media (max-width: 768px) {
+  .logo-image {
+    width: 100px;
+    height: 106px;
+    margin: 0 auto;
+  }
+}
 /* .text-content {
   width: 50%;
 } */

@@ -319,7 +319,7 @@ const Home: React.FC = () => {
               </div>
 
               {/* Right side: Images */}
-              <div className="flex gap-4 items-start">
+              <div className="flex gap-4 items-start justify-center md:justify-start">
                 <img
                   src="/images/elderlycare/logo.png"
                   alt="Logo"
@@ -419,7 +419,7 @@ const Home: React.FC = () => {
               </div>
 
               {/* Right side: Images */}
-              <div className="flex gap-4 items-start">
+              <div className="flex gap-4 items-start justify-center md:justify-start">
                 <img
                   src="/images/securesocialshare/lock.jpg"
                   alt="Logo"
@@ -512,7 +512,7 @@ const Home: React.FC = () => {
               </div>
 
               {/* Right side: Images */}
-              <div className="flex gap-4 items-start">
+              <div className="flex gap-4 items-start justify-center md:justify-start">
                 <img
                   src="/images/wyckoff/wykoff_chart.png"
                   alt="Wyckoff Chart"
