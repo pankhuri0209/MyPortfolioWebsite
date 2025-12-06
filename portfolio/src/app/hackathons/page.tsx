@@ -254,6 +254,71 @@ const HackathonsPage: React.FC = () => {
             </div>
           </CardBody>
         </Card>
+
+        {/* Root Beer Game - EasyA Polkadot Harvard Hackathon Project Card */}
+        <Card
+          isBlurred
+          className="border-none bg-background/60 dark:bg-default-100/50 w-full max-w-[1150px] rounded-none"
+          shadow="sm"
+          style={{ backgroundColor: "#F3E5F5" }}
+        >
+          <CardBody>
+            <div className="grid grid-cols-12 gap-6 md:gap-8 items-center">
+              <div className="col-span-12 md:col-span-5 flex justify-center">
+                <div className="flex space-x-4">
+                  <img
+                    src="/images/hackathons/rootbeer-team.jpeg"
+                    alt="Root Beer Game Team at EasyA Polkadot Hackathon"
+                    className="w-full h-auto md:w-full md:h-auto object-contain flex-shrink-0"
+                  />
+                </div>
+              </div>
+
+              <div className="col-span-12 md:col-span-7">
+                <h3
+                  className="font-semibold text-lg md:text-xl"
+                  style={{ color: "#E6007A" }}
+                >
+                  Polkadot, React.js, Unique Network
+                </h3>
+                <h1 className="text-2xl font-bold">
+                  <a
+                    href="https://github.com/pankhuri0209/Web3-Root-Beer-DOT-Game"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="hover:underline"
+                  >
+                    Root Beer Game - EasyA Polkadot Harvard Hackathon
+                  </a>
+                </h1>
+                <p className="text-base md:text-lg text-foreground/80 leading-relaxed">
+                  A Web3 implementation of the classic supply chain management game
+                  (originally from MIT/Harvard) built on Polkadot&apos;s Unique Network.
+                  Uses NFT badges to validate supply chain operational excellence
+                  for RWA tokenization and trade financing.{" "}
+                  <strong style={{ color: "#E6007A" }}>Finalist Team.</strong>
+                </p>
+                <div className="flex justify-start mt-4">
+                  <Link href="/rootbeer">
+                    <button className="button">
+                      View Project
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 25 25"
+                        className="icon w-4 h-4"
+                      >
+                        <path
+                          style={{ fill: "#232326" }}
+                          d="M24 12.001H2.914l5.294-5.295-.707-.707L1 12.501l6.5 6.5.707-.707-5.293-5.293H24v-1z"
+                        />
+                      </svg>
+                    </button>
+                  </Link>
+                </div>
+              </div>
+            </div>
+          </CardBody>
+        </Card>
       </div>
 
       <br />

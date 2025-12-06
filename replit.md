@@ -25,6 +25,7 @@ This is a Next.js portfolio website showcasing projects, blog posts, and profess
 - **Hackathons Page Redesigned**: Transformed from placeholder "Coming Soon" to full project showcase with cards matching the Projects page style. Added WebNova Container Challenge (Python, Computer Vision, Docker - 2nd Place Honorable Mention), Secure Social Share (ETHBoston 2024), and Pay2Flix (EasyA Stacks Harvard Hackathon - 3rd Place No Code Track) hackathon project cards
 - **WebNova Container Challenge Detail Page**: Created dedicated /webnova page with project details including objective, technical solution (SIFT detection, BruteForce matching), technologies used, team information, and links to GitHub repository and YouTube demo video
 - **Pay2Flix Detail Page**: Created dedicated /pay2flix page for the EasyA x Stacks Harvard Hackathon project (November 9-10, 2024), featuring decentralized streaming platform with Bitcoin microtransactions, 3rd Place in No Code Solution Track
+- **Root Beer Game Hackathon Project**: Added new hackathon card and dedicated /rootbeer page for the Web3 Root Beer Game (EasyA x Polkadot Hackathon at Harvard). Features supply chain management game on Polkadot's Unique Network with NFT badges for RWA tokenization. Team was a Finalist. Includes links to GitHub, YouTube demo, and Canva presentation.
 
 ## Project Architecture
 
@@ -51,6 +52,9 @@ portfolio/
 │       ├── hackathons/
 │       ├── projects/
 │       ├── secureshare/
+│       ├── webnova/   # WebNova Container Challenge detail page
+│       ├── pay2flix/  # Pay2Flix hackathon detail page
+│       ├── rootbeer/  # Root Beer Game hackathon detail page
 │       ├── wyckoff/   # Wyckoff Trading Assistant project detail page
 │       └── page.tsx   # Home page
 ├── public/            # Static assets
