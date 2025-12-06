@@ -190,6 +190,70 @@ const HackathonsPage: React.FC = () => {
             </div>
           </CardBody>
         </Card>
+
+        {/* Pay2Flix - EasyA Stacks Harvard Hackathon Project Card */}
+        <Card
+          isBlurred
+          className="border-none bg-background/60 dark:bg-default-100/50 w-full max-w-[1150px] rounded-none"
+          shadow="sm"
+          style={{ backgroundColor: "#FFF3E0" }}
+        >
+          <CardBody>
+            <div className="grid grid-cols-12 gap-6 md:gap-8 items-center">
+              <div className="col-span-12 md:col-span-5 flex justify-center">
+                <div className="flex space-x-4">
+                  <img
+                    src="/images/hackathons/pay2flix-team-photo.jpg"
+                    alt="Pay2Flix Team at EasyA Stacks Harvard Hackathon"
+                    className="w-full h-auto md:w-full md:h-auto object-contain flex-shrink-0"
+                  />
+                </div>
+              </div>
+
+              <div className="col-span-12 md:col-span-7">
+                <h3
+                  className="font-semibold text-lg md:text-xl"
+                  style={{ color: "#FF6B35" }}
+                >
+                  No Code, Blockchain, Stacks
+                </h3>
+                <h1 className="text-2xl font-bold">
+                  <a
+                    href="https://x.com/easya_app/status/1856050187623641582"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="hover:underline"
+                  >
+                    Pay2Flix - EasyA Stacks Harvard Hackathon
+                  </a>
+                </h1>
+                <p className="text-base md:text-lg text-foreground/80 leading-relaxed">
+                  A decentralized streaming platform built on Stacks blockchain
+                  enabling pay-per-view content monetization using Bitcoin.
+                  Allows creators to monetize videos through microtransactions.{" "}
+                  <strong>Winner of 3rd Place in the No Code Solution Track.</strong>
+                </p>
+                <div className="flex justify-start mt-4">
+                  <Link href="/pay2flix">
+                    <button className="button">
+                      View Project
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 25 25"
+                        className="icon w-4 h-4"
+                      >
+                        <path
+                          style={{ fill: "#232326" }}
+                          d="M24 12.001H2.914l5.294-5.295-.707-.707L1 12.501l6.5 6.5.707-.707-5.293-5.293H24v-1z"
+                        />
+                      </svg>
+                    </button>
+                  </Link>
+                </div>
+              </div>
+            </div>
+          </CardBody>
+        </Card>
       </div>
 
       <br />

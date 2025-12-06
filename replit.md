@@ -22,8 +22,9 @@ This is a Next.js portfolio website showcasing projects, blog posts, and profess
 - **Fixed Project Navigation**: Changed Wyckoff "View Project" button to navigate to /wyckoff page instead of external GitHub link, maintaining consistent internal navigation for projects with dedicated detail pages
 - **Projects Page Content Structure**: Updated four-section layout to include new projects - added Wyckoff Trading Assistant (AI-powered trading with PyTorch Transformers and Q-learning) and Meeting Notes Application (vanilla JavaScript with CRUD operations) to Web & Cloud Solutions and AI & Machine Learning sections
 - **Hidden Blog Menu Item**: Removed "Blog" from navigation menu in both desktop and mobile views to streamline site navigation
-- **Hackathons Page Redesigned**: Transformed from placeholder "Coming Soon" to full project showcase with cards matching the Projects page style. Added WebNova Container Challenge (Python, Computer Vision, Docker - 2nd Place Honorable Mention) and Secure Social Share (ETHBoston 2024) hackathon project cards
+- **Hackathons Page Redesigned**: Transformed from placeholder "Coming Soon" to full project showcase with cards matching the Projects page style. Added WebNova Container Challenge (Python, Computer Vision, Docker - 2nd Place Honorable Mention), Secure Social Share (ETHBoston 2024), and Pay2Flix (EasyA Stacks Harvard Hackathon - 3rd Place No Code Track) hackathon project cards
 - **WebNova Container Challenge Detail Page**: Created dedicated /webnova page with project details including objective, technical solution (SIFT detection, BruteForce matching), technologies used, team information, and links to GitHub repository and YouTube demo video
+- **Pay2Flix Detail Page**: Created dedicated /pay2flix page for the EasyA x Stacks Harvard Hackathon project (November 9-10, 2024), featuring decentralized streaming platform with Bitcoin microtransactions, 3rd Place in No Code Solution Track
 
 ## Project Architecture
 
