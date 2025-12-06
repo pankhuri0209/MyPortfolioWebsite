@@ -166,8 +166,8 @@ const HackathonsPage: React.FC = () => {
                   An E2E encrypted data sharing system with strict, smart
                   contract-based access control, allowing users to securely
                   share sensitive information with their social circle in a
-                  decentralized way. Winner of multiple 1st place prizes at
-                  ETHBoston 2024.
+                  decentralized way.{" "}
+                  <strong style={{ color: "#E34D73" }}>Winner of multiple 1st place prizes at ETHBoston 2024.</strong>
                 </p>
                 <div className="flex justify-start mt-4">
                   <Link href="/secureshare">
