@@ -37,6 +37,12 @@ const Home: React.FC = () => {
       >
         Dr. Purnendu Shekhar Pandey
       </h2>
+      <h2
+        className="text-foreground/90 text-xl mt-2"
+        style={{ color: "#E34D73FF", fontStyle: "italic" }}
+      >
+        Associate Professor & Researcher
+      </h2>
       <a
         href="https://www.linkedin.com/in/dr-purnendu-shekhar-pandey/"
         target="_blank"
@@ -45,12 +51,6 @@ const Home: React.FC = () => {
       >
         <FaLinkedin size={28} style={{ color: "#0A66C2" }} />
       </a>
-      <h2
-        className="text-foreground/90 text-xl mt-2"
-        style={{ color: "#E34D73FF", fontStyle: "italic" }}
-      >
-        Associate Professor & Researcher
-      </h2>
       <p className="mt-4 text-center">
         I am pleased to recommend Pankhuri for her outstanding work on the Smart
         Bag project. I had the privilege of supervising Pankhuri and witnessing
@@ -83,6 +83,12 @@ const Home: React.FC = () => {
       >
         Naresh Sharma
       </h2>
+      <h2
+        className="text-foreground/90 text-xl mt-2"
+        style={{ color: "#E34D73FF", fontStyle: "italic" }}
+      >
+        Sr. Technical Manager @ Hexagon
+      </h2>
       <a
         href="https://www.linkedin.com/in/naresh-kr-sharma/"
         target="_blank"
@@ -91,12 +97,6 @@ const Home: React.FC = () => {
       >
         <FaLinkedin size={28} style={{ color: "#0A66C2" }} />
       </a>
-      <h2
-        className="text-foreground/90 text-xl mt-2"
-        style={{ color: "#E34D73FF", fontStyle: "italic" }}
-      >
-        Sr. Technical Manager @ Hexagon
-      </h2>
       <p className="mt-4 text-center">
         I am pleased to write this recommendation for Pankhuri based on her
         outstanding performance. Pankhuri collaborated with me on various
@@ -120,6 +120,12 @@ const Home: React.FC = () => {
       >
         Shivangi Pandey
       </h2>
+      <h2
+        className="text-foreground/90 text-xl mt-2"
+        style={{ color: "#E34D73FF", fontStyle: "italic" }}
+      >
+        Senior Software Engineer @ Nagarro
+      </h2>
       <a
         href="https://www.linkedin.com/in/shivangi-pandey-7047871b0/"
         target="_blank"
@@ -128,12 +134,6 @@ const Home: React.FC = () => {
       >
         <FaLinkedin size={28} style={{ color: "#0A66C2" }} />
       </a>
-      <h2
-        className="text-foreground/90 text-xl mt-2"
-        style={{ color: "#E34D73FF", fontStyle: "italic" }}
-      >
-        Senior Software Engineer @ Nagarro
-      </h2>
       <p className="mt-4 text-center">
         I had the pleasure of working with Pankhuri, and I am continually
         impressed by her exceptional problem-solving skills and dedication.
