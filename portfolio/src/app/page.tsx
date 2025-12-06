@@ -32,10 +32,18 @@ const Home: React.FC = () => {
   const testimonials = [
     <div key="1">
       <h2
-        className="font-semibold text-foreground/90 text-2xl"
+        className="font-semibold text-foreground/90 text-2xl flex items-center gap-2"
         style={{ color: "#E34D73FF" }}
       >
         Dr. Purnendu Shekhar Pandey
+        <a
+          href="https://www.linkedin.com/in/dr-purnendu-shekhar-pandey/"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="hover:opacity-80 transition-opacity"
+        >
+          <FaLinkedin size={24} style={{ color: "#0A66C2" }} />
+        </a>
       </h2>
       <br />
       <h2
@@ -71,10 +79,18 @@ const Home: React.FC = () => {
 
     <div key="2">
       <h2
-        className="font-semibold text-foreground/90 text-2xl"
+        className="font-semibold text-foreground/90 text-2xl flex items-center gap-2"
         style={{ color: "#E34D73FF" }}
       >
         Naresh Sharma
+        <a
+          href="https://www.linkedin.com/in/naresh-kr-sharma/"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="hover:opacity-80 transition-opacity"
+        >
+          <FaLinkedin size={24} style={{ color: "#0A66C2" }} />
+        </a>
       </h2>
       <br />
       <h2
@@ -101,10 +117,18 @@ const Home: React.FC = () => {
     </div>,
     <div key="3">
       <h2
-        className="font-semibold text-foreground/90 text-2xl"
+        className="font-semibold text-foreground/90 text-2xl flex items-center gap-2"
         style={{ color: "#E34D73FF" }}
       >
         Shivangi Pandey
+        <a
+          href="https://www.linkedin.com/in/shivangi-pandey-7047871b0/"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="hover:opacity-80 transition-opacity"
+        >
+          <FaLinkedin size={24} style={{ color: "#0A66C2" }} />
+        </a>
       </h2>
       <br />
       <h2
