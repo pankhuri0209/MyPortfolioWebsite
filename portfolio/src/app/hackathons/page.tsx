@@ -534,6 +534,85 @@ const HackathonsPage: React.FC = () => {
             </div>
           </CardBody>
         </Card>
+
+        {/* Stellar Integra - Stellar Hackathon 2025 */}
+        <Card
+          isBlurred
+          className="border-none bg-background/60 dark:bg-default-100/50 w-full max-w-[1150px] rounded-none"
+          shadow="sm"
+          style={{ backgroundColor: "#EDE7F6" }}
+        >
+          <CardBody>
+            <div className="grid grid-cols-12 gap-6 md:gap-8 items-center">
+              <div className="col-span-12 md:col-span-5 flex justify-center">
+                <div className="flex items-center justify-center w-full h-48 md:h-64 rounded-lg" style={{ backgroundColor: "#5E35B1" }}>
+                  <div className="text-center text-white p-6">
+                    <div className="text-5xl mb-3">&#11088;&#128640;</div>
+                    <div className="text-2xl font-bold">Stellar Integra</div>
+                    <div className="text-sm opacity-90">Agent-Driven Trade Flow</div>
+                  </div>
+                </div>
+              </div>
+
+              <div className="col-span-12 md:col-span-7">
+                <h3
+                  className="font-semibold text-lg md:text-xl"
+                  style={{ color: "#5E35B1" }}
+                >
+                  TypeScript, React, Stellar Blockchain, Rust
+                </h3>
+                <h1 className="text-2xl font-bold">
+                  <a
+                    href="https://github.com/amanpal108/stellar-hack-o-ween"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="hover:underline"
+                  >
+                    Stellar Integra - Agentic Trade Settlement
+                  </a>
+                </h1>
+                <p className="text-sm text-gray-600 mb-2">
+                  Stellar Hackathon 2025 (Hack-o-ween)
+                </p>
+                <p className="text-base md:text-lg text-foreground/80 leading-relaxed">
+                  An agent-driven B2B trade flow with real Stellar Testnet transactions.
+                  Features biometric passkey login, 7 microservices architecture, vLEI
+                  entity verification, and DvP (Delivery vs Payment) matching with
+                  live XLM payments on blockchain.
+                </p>
+                <p className="text-xs text-gray-500 mt-2 italic">
+                  Open source under MIT License
+                </p>
+                <div className="flex flex-wrap gap-3 mt-4">
+                  <a
+                    href="https://github.com/amanpal108/stellar-hack-o-ween"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="flex items-center gap-2 px-4 py-2 bg-gray-900 text-white rounded-lg hover:bg-gray-700 transition-colors text-sm"
+                  >
+                    GitHub
+                  </a>
+                  <a
+                    href="https://www.loom.com/share/a14cceb9357a4d3a98b06d53c70d81af"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="flex items-center gap-2 px-4 py-2 bg-purple-600 text-white rounded-lg hover:bg-purple-700 transition-colors text-sm"
+                  >
+                    Demo Video
+                  </a>
+                  <a
+                    href="https://www.canva.com/design/DAG25s_Eoew/DJ0hLZFnydk2cyvsClOb1Q/view?utm_content=DAG25s_Eoew&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=h38a4c7d4cc"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="flex items-center gap-2 px-4 py-2 bg-yellow-500 text-white rounded-lg hover:bg-yellow-600 transition-colors text-sm"
+                  >
+                    Presentation
+                  </a>
+                </div>
+              </div>
+            </div>
+          </CardBody>
+        </Card>
       </div>
 
       <br />
