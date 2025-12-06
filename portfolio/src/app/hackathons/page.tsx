@@ -101,18 +101,11 @@ const HackathonsPage: React.FC = () => {
                   shipping containers between two satellite images of the same
                   geographic location. The system uses SIFT (Scale-Invariant
                   Feature Transform) detection and BruteForce matching
-                  algorithms to identify and compare containers. The distance
-                  difference against a threshold is used to calculate
-                  variations, outputting differential imagery and the count of
-                  container differences. Built with Python and containerized
-                  using Docker for easy deployment.
+                  algorithms to identify and compare containers.{" "}
+                  <strong>Winner of 2nd Place Honorable Mention.</strong>
                 </p>
                 <div className="flex justify-start mt-4">
-                  <a
-                    href="https://github.com/pankhuri0209/webnovaContainers"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
+                  <Link href="/webnova">
                     <button className="button">
                       View Project
                       <svg
@@ -126,7 +119,7 @@ const HackathonsPage: React.FC = () => {
                         />
                       </svg>
                     </button>
-                  </a>
+                  </Link>
                 </div>
               </div>
             </div>
