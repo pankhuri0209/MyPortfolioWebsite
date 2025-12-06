@@ -61,16 +61,8 @@ body {
 } */
 
 .logo-image {
-  width: 200px;
-  height: 200px;
-  object-fit: contain;
-}
-
-@media (min-width: 768px) {
-  .logo-image {
-    width: 250px;
-    height: 250px;
-  }
+  width: 165px;
+  height: 175px;
 }
 /* .text-content {
   width: 50%;
