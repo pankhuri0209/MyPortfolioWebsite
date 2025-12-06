@@ -267,8 +267,8 @@ const HackathonsPage: React.FC = () => {
               <div className="col-span-12 md:col-span-5 flex justify-center">
                 <div className="flex space-x-4">
                   <img
-                    src="/images/hackathons/rootbeer-team.jpeg"
-                    alt="Root Beer Game Team at EasyA Polkadot Hackathon"
+                    src="/images/hackathons/rootbeer-game.jpeg"
+                    alt="Web3 Root Beer Game - Supply Chain Management"
                     className="w-full h-auto md:w-full md:h-auto object-contain flex-shrink-0"
                   />
                 </div>
