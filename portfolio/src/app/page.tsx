@@ -323,7 +323,7 @@ const Home: React.FC = () => {
                 <img
                   src="/images/elderlycare/logo.png"
                   alt="Logo"
-                  className="logo-image max-w-[40px] md:max-w-none"
+                  className="w-[80px] h-auto md:w-[165px] md:h-[175px]"
                 />
                 {/* <img
                   src="/images/elderlycare/hands.jpeg"
