@@ -94,7 +94,7 @@ const ElderlyCarePage: React.FC = () => {
             <img
               src="/images/elderlycare/logo.png"
               alt="ElderlyCare Logo"
-              className="rounded-lg shadow-lg max-w-full h-auto"
+              className="rounded-lg shadow-lg max-w-[280px] h-auto"
             />
           </div>
         </div>
@@ -107,14 +107,14 @@ const ElderlyCarePage: React.FC = () => {
                 <img
                   src="/images/elderlycare/pic1.png"
                   alt="ElderlyCare Dashboard"
-                  className="w-full rounded-lg shadow-lg"
+                  className="max-w-[400px] w-full rounded-lg shadow-lg"
                 />
               </div>
               <div className="flex justify-center">
                 <img
                   src="/images/elderlycare/pic3.png"
                   alt="ElderlyCare Features"
-                  className="w-full rounded-lg shadow-lg"
+                  className="max-w-[400px] w-full rounded-lg shadow-lg"
                 />
               </div>
             </div>
