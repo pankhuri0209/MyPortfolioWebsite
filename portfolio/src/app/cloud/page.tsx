@@ -1,215 +1,293 @@
-import React from "react";
-import Image from "next/image";
-import Navbar from "../components/Navbar"; // Ensure this path is correct
-import Footer from "../components/Footer"; // Ensure this path is correct
-import Script from "next/script";
-import { Card, CardBody, Button, Slider, CardFooter } from "@nextui-org/react";
+"use client";
 
-const CloudPage = () => {
+import React from "react";
+import Navbar from "../components/Navbar";
+import Footer from "../components/Footer";
+import Link from "next/link";
+import { FaGithub } from "react-icons/fa";
+
+const CloudPage: React.FC = () => {
   return (
     <div>
       <Navbar />
 
-      <div className="container mx-auto flex flex-col md:flex-row items-center pt-32 px-8 md:px-32 space-y-8 md:space-y-0 md:space-x-8">
-        <div className="text-content md:w-1/2 text-center md:text-left">
-          <div className="relative">
-            <span
-              className="text_name"
-              style={{
-                fontFamily: "Sarabun, sans-serif",
-                fontSize: "20px",
-                lineHeight: "46px",
-                fontWeight: "700",
-              }}
+      <div className="container mx-auto px-8 md:px-16 lg:px-24 xl:px-32 pt-32">
+        <div className="mb-6">
+          <Link
+            href="/projects"
+            className="text-pink-600 hover:text-pink-800 flex items-center gap-2"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              className="h-5 w-5"
+              viewBox="0 0 20 20"
+              fill="currentColor"
             >
-              <span style={{ color: "#F9629F" }}>AWS, Terraform(IaaC)</span>
-            </span>
-          </div>
-          <h1 className="text-4xl md:text-5xl font-semibold leading-tight">
-            Cloud Native Application
-          </h1>
-          <br />
-          <br />
-          <div className="w-full mt-8 md:mt-0">
-            <p>
-              Developed a <b>cloud-native user management application</b>{" "}
-              leveraging Node.js, Express.js, and PostgreSQL to support
-              concurrent requests with CRUD operations, health monitoring, and
-              robust backend services. The application was designed for{" "}
-              <b>high availability</b> and <b>fault tolerance</b>, ensuring
-              optimal performance. Provisioned AWS infrastructure using{" "}
-              <b>Terraform</b> and <b>Packer</b>, enabling Infrastructure as
-              Code (IaC) deployment for key AWS resources, including VPCs, RDS,
-              Route 53, and SSL certificates. Integrated AWS SNS and Lambda for
-              event-driven workflows, such as automated email verification via
-              Sendgrid. To ensure security and reliability, System was used for
-              service management, along with network security groups. The
-              application’s <b>scalability</b> and availability were enhanced
-              with EC2 Auto Scaling and Elastic Load Balancing, enabling faster
-              deployments. A fully automated CI/CD pipeline was implemented
-              using <b>GitHub Actions</b>, covering end-to-end testing, AMI
-              creation, and rolling updates for a{" "}
-              <b>seamless deployment experience</b>.
+              <path
+                fillRule="evenodd"
+                d="M9.707 16.707a1 1 0 01-1.414 0l-6-6a1 1 0 010-1.414l6-6a1 1 0 011.414 1.414L5.414 9H17a1 1 0 110 2H5.414l4.293 4.293a1 1 0 010 1.414z"
+                clipRule="evenodd"
+              />
+            </svg>
+            Back to Projects
+          </Link>
+        </div>
+
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-start">
+          <div className="space-y-6">
+            <div
+              className="inline-block px-4 py-2 rounded-full text-white font-semibold text-sm"
+              style={{ backgroundColor: "#FF9800" }}
+            >
+              AWS, Terraform (IaC)
+            </div>
+
+            <h1 className="text-4xl md:text-5xl font-bold leading-tight">
+              Cloud Native Application
+            </h1>
+
+            <p className="text-xl text-gray-600">
+              Network Structures and Cloud Computing Course | December 2024
             </p>
-          </div>
-        </div>
-        <div className="flex flex-col items-start justify-start w-full md:w-1/3 md:ml-8">
-          <div className="mb-4 ml-50 md:ml-60">
-            <h3 className="font-semibold text-foreground/90">Date</h3>
-            <p className="text-small text-foreground/80">17 December 2024</p>
-          </div>
-          <div className="mb-4 ml-50 md:ml-60">
-            <h3 className="font-semibold text-foreground/90">Project Type</h3>
-            <p className="text-small text-foreground/80">
-              Network Structures and Cloud Computing Course
+
+            <p className="text-lg text-gray-700 leading-relaxed">
+              A cloud-native user management application leveraging Node.js, Express.js, and 
+              PostgreSQL to support concurrent requests with CRUD operations, health monitoring, 
+              and robust backend services. Designed for high availability and fault tolerance 
+              with fully automated CI/CD pipeline using GitHub Actions.
             </p>
+
+            <div className="flex flex-wrap gap-4">
+              <a
+                href="https://github.com/orgs/002478905/repositories"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex items-center gap-2 px-6 py-3 bg-gray-900 text-white rounded-lg hover:bg-gray-700 transition-colors"
+              >
+                <FaGithub size={20} />
+                GitHub Repository
+              </a>
+            </div>
+          </div>
+
+          <div className="flex justify-center">
+            <img
+              src="/images/cloud/chart.jpg"
+              alt="Cloud Architecture Diagram"
+              className="rounded-lg shadow-lg max-w-full h-auto"
+            />
           </div>
         </div>
-      </div>
-      <br />
-      <br />
-      <div className="container mx-auto px-8 md:px-32">
-        <div className="flex justify-center">
-          <img
-            src="images/cloud/chart.jpg" // Update the path to your image
-            alt="Elderly care"
-            className="w-full max-w-3xl rounded-lg shadow-lg"
-          />
-        </div>
-        <br />
-        <br />
-      </div>
-      <br />
 
-      {/* New Section for Image and Additional Content */}
-      <div className="container mx-auto px-8 md:px-32">
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8"></div>
-        <br />
-        <br />
-        <div className="text-center md:text-left">
-          <h2 className="text-2xl md:text-3xl font-semibold mb-4">Features</h2>
-          <ul className="grid grid-cols-1 md:grid-cols-2 gap-6">
-            <li className="flex items-start space-x-3">
-              <span className="text-xl">⚙️</span>
-              <div>
-                <div className="feature-title font-semibold text-lg">
-                  Scalable User Management
+        <div className="mt-16 space-y-12">
+          <section>
+            <h2 className="text-3xl font-bold mb-6">The Challenge</h2>
+            <div className="bg-gray-50 p-6 rounded-lg">
+              <p className="text-lg text-gray-700 leading-relaxed mb-4">
+                Building enterprise-grade cloud applications requires addressing multiple concerns:
+              </p>
+              <ul className="list-disc list-inside space-y-2 text-gray-700">
+                <li>
+                  <strong>Scalability</strong> - Handling variable traffic loads without manual intervention
+                </li>
+                <li>
+                  <strong>High Availability</strong> - Ensuring the application remains accessible during failures
+                </li>
+                <li>
+                  <strong>Infrastructure Management</strong> - Consistent, repeatable deployments across environments
+                </li>
+                <li>
+                  <strong>Security</strong> - Protecting sensitive data and enforcing access controls
+                </li>
+                <li>
+                  <strong>Deployment Automation</strong> - Reducing manual steps and human error in releases
+                </li>
+              </ul>
+            </div>
+          </section>
+
+          <section>
+            <h2 className="text-3xl font-bold mb-6">Key Features</h2>
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+              <div className="bg-orange-50 p-6 rounded-lg">
+                <div className="flex items-start gap-3">
+                  <span className="text-2xl">⚙️</span>
+                  <div>
+                    <h3 className="text-xl font-semibold mb-2 text-orange-800">
+                      Scalable User Management
+                    </h3>
+                    <p className="text-gray-700">
+                      Cloud-native RESTful user management application using Node.js, Express.js, 
+                      and PostgreSQL, supporting concurrent requests, CRUD operations, and health monitoring.
+                    </p>
+                  </div>
                 </div>
-                <p className="text-foreground/80">
-                  Developed a cloud-native{" "}
-                  <b>RESTful user management application</b> using{" "}
-                  <b>Node.js, Express.js, and PostgreSQL</b>, supporting
-                  concurrent requests, <b>CRUD operations</b>, and health
-                  monitoring.
-                </p>
               </div>
-            </li>
-
-            <li className="flex items-start space-x-3">
-              <span className="text-xl">📦</span>
-              <div>
-                <div className="feature-title font-semibold text-lg">
-                  Infrastructure as Code (IaC)
+              <div className="bg-blue-50 p-6 rounded-lg">
+                <div className="flex items-start gap-3">
+                  <span className="text-2xl">📦</span>
+                  <div>
+                    <h3 className="text-xl font-semibold mb-2 text-blue-800">
+                      Infrastructure as Code (IaC)
+                    </h3>
+                    <p className="text-gray-700">
+                      Provisioned AWS infrastructure using Terraform and Packer, deploying VPCs, 
+                      RDS, Route 53, and SSL certificates for automated and scalable deployments.
+                    </p>
+                  </div>
                 </div>
-                <p className="text-foreground/80">
-                  Provisioned AWS infrastructure using{" "}
-                  <b>Terraform and Packer</b>, deploying{" "}
-                  <b>VPCs, RDS, Route 53, and SSL certificates</b> for automated
-                  and scalable deployments.
-                </p>
               </div>
-            </li>
-
-            <li className="flex items-start space-x-3">
-              <span className="text-xl">📧</span>
-              <div>
-                <div className="feature-title font-semibold text-lg">
-                  Event-Driven Workflows
+              <div className="bg-green-50 p-6 rounded-lg">
+                <div className="flex items-start gap-3">
+                  <span className="text-2xl">📧</span>
+                  <div>
+                    <h3 className="text-xl font-semibold mb-2 text-green-800">
+                      Event-Driven Workflows
+                    </h3>
+                    <p className="text-gray-700">
+                      Integrated AWS SNS and Lambda for event-driven workflows, including automated 
+                      email verification with SendGrid, ensuring seamless communication.
+                    </p>
+                  </div>
                 </div>
-                <p className="text-foreground/80">
-                  Integrated <b>AWS SNS and Lambda</b> for event-driven
-                  workflows, including
-                  <b> automated email verification with Sendgrid</b>, ensuring
-                  seamless communication.
-                </p>
               </div>
-            </li>
-
-            <li className="flex items-start space-x-3">
-              <span className="text-xl">🔐</span>
-              <div>
-                <div className="feature-title font-semibold text-lg">
-                  Security & Service Management
+              <div className="bg-red-50 p-6 rounded-lg">
+                <div className="flex items-start gap-3">
+                  <span className="text-2xl">🔐</span>
+                  <div>
+                    <h3 className="text-xl font-semibold mb-2 text-red-800">
+                      Security & Service Management
+                    </h3>
+                    <p className="text-gray-700">
+                      Secured services using Systemd for process management and enforced network 
+                      security via AWS security groups.
+                    </p>
+                  </div>
                 </div>
-                <p className="text-foreground/80">
-                  Secured services using <b>Systemd for process management</b>{" "}
-                  and enforced <b>network security</b> via{" "}
-                  <b>AWS security groups</b>.
-                </p>
               </div>
-            </li>
-
-            <li className="flex items-start space-x-3">
-              <span className="text-xl">🚀</span>
-              <div>
-                <div className="feature-title font-semibold text-lg">
-                  Scalability & Auto Scaling
+              <div className="bg-purple-50 p-6 rounded-lg">
+                <div className="flex items-start gap-3">
+                  <span className="text-2xl">🚀</span>
+                  <div>
+                    <h3 className="text-xl font-semibold mb-2 text-purple-800">
+                      Scalability & Auto Scaling
+                    </h3>
+                    <p className="text-gray-700">
+                      Enhanced performance with EC2 Auto Scaling and Elastic Load Balancing, 
+                      optimizing traffic distribution and reducing downtime.
+                    </p>
+                  </div>
                 </div>
-                <p className="text-foreground/80">
-                  Enhanced performance with{" "}
-                  <b>EC2 Auto Scaling and Elastic Load Balancing</b>, optimizing{" "}
-                  <b>traffic distribution and reducing downtime</b>.
-                </p>
               </div>
-            </li>
-
-            <li className="flex items-start space-x-3 col-span-1 md:col-span-2">
-              <span className="text-xl">🔄</span>
-              <div>
-                <div className="feature-title font-semibold text-lg">
-                  CI/CD Pipeline Automation
+              <div className="bg-teal-50 p-6 rounded-lg">
+                <div className="flex items-start gap-3">
+                  <span className="text-2xl">🔄</span>
+                  <div>
+                    <h3 className="text-xl font-semibold mb-2 text-teal-800">
+                      CI/CD Pipeline Automation
+                    </h3>
+                    <p className="text-gray-700">
+                      Implemented CI/CD pipeline using GitHub Actions, enabling automated testing, 
+                      AMI creation, and rolling updates for seamless deployment.
+                    </p>
+                  </div>
                 </div>
-                <p className="text-foreground/80">
-                  Implemented a <b>CI/CD pipeline using GitHub Actions</b>,
-                  enabling{" "}
-                  <b>automated testing, AMI creation, and rolling updates</b>,
-                  ensuring seamless deployment.
-                </p>
               </div>
-            </li>
-          </ul>
-        </div>
-      </div>
+            </div>
+          </section>
 
-      <br />
-      <div className="content-wrapper px-4 md:px-12 py-8">
-        <div className="text-center md:text-left">
-          <h2 className="skills-heading mb-5 text-2xl md:text-4xl">
-            References
-          </h2>
-          <ul className="reference-list space-y-4">
-            <li>
-              <div>
-                <div className="reference-title text-lg md:text-xl font-semibold">
-                  GitHub:
-                </div>
-                <a
-                  href="https://github.com/orgs/002478905/repositories"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="text-blue-500 hover:text-blue-700 break-words"
+          <section>
+            <h2 className="text-3xl font-bold mb-6">Technology Stack</h2>
+            <div className="flex flex-wrap gap-3">
+              {[
+                "AWS",
+                "Terraform",
+                "Packer",
+                "Node.js",
+                "Express.js",
+                "PostgreSQL",
+                "EC2 Auto Scaling",
+                "Elastic Load Balancing",
+                "AWS SNS",
+                "AWS Lambda",
+                "Route 53",
+                "GitHub Actions",
+                "SendGrid",
+                "Systemd",
+              ].map((tech) => (
+                <span
+                  key={tech}
+                  className="px-4 py-2 rounded-full text-white font-medium"
+                  style={{ backgroundColor: "#FF9800" }}
                 >
-                  https://tinyurl.com/mt8nnjmn
-                </a>
-              </div>
-            </li>
-          </ul>
+                  {tech}
+                </span>
+              ))}
+            </div>
+          </section>
+
+          <section>
+            <h2 className="text-3xl font-bold mb-6">Architecture Highlights</h2>
+            <div className="bg-gray-50 p-6 rounded-lg">
+              <ul className="space-y-3 text-gray-700">
+                <li className="flex items-start gap-3">
+                  <span className="text-orange-600 font-bold">1.</span>
+                  <span>
+                    <strong>VPC Configuration</strong> - Isolated network environment with public and private subnets
+                  </span>
+                </li>
+                <li className="flex items-start gap-3">
+                  <span className="text-orange-600 font-bold">2.</span>
+                  <span>
+                    <strong>RDS PostgreSQL</strong> - Managed database with automated backups and failover
+                  </span>
+                </li>
+                <li className="flex items-start gap-3">
+                  <span className="text-orange-600 font-bold">3.</span>
+                  <span>
+                    <strong>Custom AMIs</strong> - Packer-built Amazon Machine Images for consistent deployments
+                  </span>
+                </li>
+                <li className="flex items-start gap-3">
+                  <span className="text-orange-600 font-bold">4.</span>
+                  <span>
+                    <strong>SSL/TLS</strong> - Secure communications with AWS Certificate Manager
+                  </span>
+                </li>
+                <li className="flex items-start gap-3">
+                  <span className="text-orange-600 font-bold">5.</span>
+                  <span>
+                    <strong>DNS Management</strong> - Route 53 for domain routing and health checks
+                  </span>
+                </li>
+              </ul>
+            </div>
+          </section>
+
+          <section>
+            <h2 className="text-3xl font-bold mb-6">Impact</h2>
+            <div
+              className="p-6 rounded-lg text-white"
+              style={{ backgroundColor: "#FF9800" }}
+            >
+              <ul className="space-y-3">
+                <li className="flex items-start gap-3">
+                  <span className="font-bold">Enterprise Ready</span> - Production-grade infrastructure with high availability
+                </li>
+                <li className="flex items-start gap-3">
+                  <span className="font-bold">Cost Optimized</span> - Auto-scaling ensures you only pay for resources you use
+                </li>
+                <li className="flex items-start gap-3">
+                  <span className="font-bold">DevOps Excellence</span> - Fully automated CI/CD reduces deployment time and errors
+                </li>
+              </ul>
+            </div>
+          </section>
         </div>
       </div>
 
       <br />
       <br />
-
       <Footer />
     </div>
   );

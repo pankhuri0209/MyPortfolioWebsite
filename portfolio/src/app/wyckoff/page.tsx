@@ -1,168 +1,245 @@
+"use client";
+
 import React from "react";
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
+import Link from "next/link";
+import { FaGithub } from "react-icons/fa";
 
-const WyckoffPage = () => {
+const WyckoffPage: React.FC = () => {
   return (
     <div>
       <Navbar />
 
-      <div className="container mx-auto flex flex-col md:flex-row items-center pt-32 px-8 md:px-32 space-y-8 md:space-y-0 md:space-x-8">
-        <div className="text-content md:w-1/2 text-center md:text-left">
-          <div className="relative">
-            <span
-              className="text_name"
-              style={{
-                fontFamily: "Sarabun, sans-serif",
-                fontSize: "20px",
-                lineHeight: "46px",
-                fontWeight: "700",
-              }}
-            >
-              <span style={{ color: "#1E88E5" }}>Machine Learning, Backend</span>
-            </span>
-          </div>
-          <h1 className="text-4xl md:text-5xl font-semibold leading-tight">
-            AI-Powered Richard Wyckoff Trading Assistant
-          </h1>
-          <br />
-          <br />
-          <div className="w-full mt-8 md:mt-0">
-            <p>
-              Wyckoff Trading Assistant is an intelligent web application that combines cutting-edge artificial intelligence with quantitative trading strategies to help traders analyze stock markets through the lens of Richard Wyckoff&apos;s time-tested methodology. Built on Flask and PyTorch, the application features two powerful components: an AI-powered chatbot that leverages a custom-trained Transformer neural network (with 6 encoder-decoder layers and 8 attention heads) to answer complex questions about Wyckoff principles including accumulation, distribution, springs, upthrusts, and market structure analysis; and a Reinforcement Learning trading engine that implements Q-learning algorithms to discover optimal buy/sell/hold strategies through backtesting on historical stock data. The system automatically fetches real-time market data via yfinance, enriches it with technical indicators (Moving Averages, RSI, Bollinger Bands, On-Balance Volume), and visualizes results through an interactive Chart.js dashboard. The chatbot, trained on 1,187 curated Wyckoff Q&A pairs, can intelligently respond to trading methodology queries, while the RL agent learns profitable trading patterns by training across 1,000 episodes, discretizing price-position states into a Q-table to maximize portfolio returns. With fallback mechanisms for both data fetching and model inference, robust error handling, and a responsive web interface, this full-stack application serves as both an educational tool for learning Wyckoff analysis and a practical backtesting platform for evaluating algorithmic trading strategies across any stock symbol with customizable parameters including date ranges and initial capital allocations.
-            </p>
-          </div>
-        </div>
-        <div className="flex flex-col items-start justify-start w-full md:w-1/3 md:ml-8">
-          <div className="mb-4 ml-50 md:ml-60">
-            <h3 className="font-semibold text-foreground/90">Date</h3>
-            <p className="text-small text-foreground/80">April, 2025</p>
-          </div>
-          <div className="mb-4 ml-50 md:ml-60">
-            <h3 className="font-semibold text-foreground/90">Project Type</h3>
-            <p className="text-small text-foreground/80">Theory and Practical Applications of Generative AI</p>
-          </div>
-        </div>
-      </div>
-      <br />
-      <br />
-
-      {/* Wyckoff Chart Section */}
-      <div className="container mx-auto px-8 md:px-32">
-        <div className="flex justify-center">
-          <img
-            src="/images/wyckoff/wykoff_chart.png"
-            alt="Wyckoff Market Cycle Chart"
-            className="w-full max-w-3xl rounded-lg shadow-lg"
-          />
-        </div>
-        <br />
-        <br />
-        <div className="text-center md:text-left">
-          <h2 className="text-2xl md:text-3xl font-semibold">Key Features</h2>
-          <ul className="features-list">
-            <li>
-              <div>
-                <div className="feature-title">Transformer-Based AI Chatbot:</div>
-                A custom-trained PyTorch neural network with 6 encoder-decoder layers and 8 attention heads, trained on 1,187 curated Wyckoff Q&A pairs to intelligently answer questions about market structure, accumulation phases, distribution patterns, springs, upthrusts, and technical analysis principles.
-              </div>
-            </li>
-            <li>
-              <div>
-                <div className="feature-title">Reinforcement Learning Trading Engine:</div>
-                Implements Q-learning algorithms to discover optimal buy/sell/hold strategies through backtesting on historical stock data, training across 1,000 episodes to learn profitable trading patterns and maximize portfolio returns.
-              </div>
-            </li>
-            <li>
-              <div>
-                <div className="feature-title">Real-Time Market Data Integration:</div>
-                Automatically fetches live stock data via yfinance API and enriches it with essential technical indicators including Moving Averages, RSI (Relative Strength Index), Bollinger Bands, and On-Balance Volume for comprehensive market analysis.
-              </div>
-            </li>
-            <li>
-              <div>
-                <div className="feature-title">Interactive Visualization Dashboard:</div>
-                Chart.js-powered interactive dashboard that visualizes trading results, backtesting performance, technical indicators, and market trends in an intuitive and user-friendly interface.
-              </div>
-            </li>
-            <li>
-              <div>
-                <div className="feature-title">Customizable Backtesting Parameters:</div>
-                Allows users to evaluate algorithmic trading strategies across any stock symbol with flexible parameters including custom date ranges, initial capital allocations, and trading strategy configurations.
-              </div>
-            </li>
-            <li>
-              <div>
-                <div className="feature-title">Educational Insights:</div>
-                Serves as both an educational tool for learning Richard Wyckoff&apos;s time-tested trading methodology and a practical platform for testing and validating trading strategies with real historical market data.
-              </div>
-            </li>
-          </ul>
-        </div>
-      </div>
-
-      <br />
-      <br />
-
-      {/* Technology Stack Section */}
-      <div className="container mx-auto px-8 md:px-32">
-        <div className="text-center md:text-left">
-          <h2 className="text-2xl md:text-3xl font-semibold mb-6">Technology Stack</h2>
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-            <div>
-              <h3 className="text-xl font-semibold mb-3" style={{ color: "#1E88E5" }}>Backend & AI</h3>
-              <ul className="space-y-2">
-                <li><strong>PyTorch:</strong> Deep learning framework for building and training the Transformer neural network</li>
-                <li><strong>Flask:</strong> Lightweight web framework for REST API development</li>
-                <li><strong>Q-Learning:</strong> Reinforcement learning algorithm for trading strategy optimization</li>
-                <li><strong>yfinance:</strong> Real-time and historical stock market data retrieval</li>
-              </ul>
-            </div>
-            <div>
-              <h3 className="text-xl font-semibold mb-3" style={{ color: "#1E88E5" }}>Frontend & Visualization</h3>
-              <ul className="space-y-2">
-                <li><strong>Chart.js:</strong> Interactive data visualization library for trading charts</li>
-                <li><strong>REST API:</strong> Clean API architecture for chatbot and trading engine integration</li>
-                <li><strong>Technical Indicators:</strong> Moving Averages, RSI, Bollinger Bands calculation engine</li>
-                <li><strong>Responsive UI:</strong> Mobile-friendly interface for accessing trading insights anywhere</li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <br />
-      <br />
-
-      {/* GitHub Link Section */}
-      <div className="container mx-auto px-8 md:px-32 mb-16">
-        <div className="text-center">
-          <a
-            href="https://github.com/pankhuri0209/Transformer-based-Richard-Wyckoff-Trading-Assistant"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="inline-block"
+      <div className="container mx-auto px-8 md:px-16 lg:px-24 xl:px-32 pt-32">
+        <div className="mb-6">
+          <Link
+            href="/projects"
+            className="text-pink-600 hover:text-pink-800 flex items-center gap-2"
           >
-            <button className="button">
-              View on GitHub
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                viewBox="0 0 25 25"
-                className="icon"
-                width="16"
-                height="16"
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              className="h-5 w-5"
+              viewBox="0 0 20 20"
+              fill="currentColor"
+            >
+              <path
+                fillRule="evenodd"
+                d="M9.707 16.707a1 1 0 01-1.414 0l-6-6a1 1 0 010-1.414l6-6a1 1 0 011.414 1.414L5.414 9H17a1 1 0 110 2H5.414l4.293 4.293a1 1 0 010 1.414z"
+                clipRule="evenodd"
+              />
+            </svg>
+            Back to Projects
+          </Link>
+        </div>
+
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-start">
+          <div className="space-y-6">
+            <div
+              className="inline-block px-4 py-2 rounded-full text-white font-semibold text-sm"
+              style={{ backgroundColor: "#1E88E5" }}
+            >
+              Machine Learning, Backend
+            </div>
+
+            <h1 className="text-4xl md:text-5xl font-bold leading-tight">
+              AI-Powered Richard Wyckoff Trading Assistant
+            </h1>
+
+            <p className="text-xl text-gray-600">
+              Theory and Practical Applications of Generative AI | April 2025
+            </p>
+
+            <p className="text-lg text-gray-700 leading-relaxed">
+              An intelligent web application that combines cutting-edge artificial intelligence 
+              with quantitative trading strategies to help traders analyze stock markets through 
+              the lens of Richard Wyckoff&apos;s time-tested methodology. Features a Transformer-based 
+              AI chatbot and reinforcement learning trading engine.
+            </p>
+
+            <div className="flex flex-wrap gap-4">
+              <a
+                href="https://github.com/pankhuri0209/Transformer-based-Richard-Wyckoff-Trading-Assistant"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex items-center gap-2 px-6 py-3 bg-gray-900 text-white rounded-lg hover:bg-gray-700 transition-colors"
               >
-                <path
-                  style={{ fill: "#232326" }}
-                  d="M24 12.001H2.914l5.294-5.295-.707-.707L1 12.501l6.5 6.5.707-.707-5.293-5.293H24v-1z"
-                  data-name="Left"
-                />
-              </svg>
-            </button>
-          </a>
+                <FaGithub size={20} />
+                GitHub Repository
+              </a>
+            </div>
+          </div>
+
+          <div className="flex justify-center">
+            <img
+              src="/images/wyckoff/wykoff_chart.png"
+              alt="Wyckoff Market Cycle Chart"
+              className="rounded-lg shadow-lg max-w-full h-auto"
+            />
+          </div>
+        </div>
+
+        <div className="mt-16 space-y-12">
+          <section>
+            <h2 className="text-3xl font-bold mb-6">The Problem</h2>
+            <div className="bg-gray-50 p-6 rounded-lg">
+              <p className="text-lg text-gray-700 leading-relaxed mb-4">
+                Traders face significant challenges when trying to apply Wyckoff methodology:
+              </p>
+              <ul className="list-disc list-inside space-y-2 text-gray-700">
+                <li>
+                  <strong>Complex Methodology</strong> - Wyckoff analysis requires deep understanding of market structure, accumulation, and distribution patterns
+                </li>
+                <li>
+                  <strong>Manual Analysis</strong> - Traditional approach requires hours of chart study and pattern recognition
+                </li>
+                <li>
+                  <strong>Backtesting Difficulty</strong> - Testing trading strategies against historical data is time-consuming
+                </li>
+                <li>
+                  <strong>Learning Curve</strong> - Understanding springs, upthrusts, and market phases takes years of study
+                </li>
+              </ul>
+            </div>
+          </section>
+
+          <section>
+            <h2 className="text-3xl font-bold mb-6">Key Features</h2>
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+              <div className="bg-blue-50 p-6 rounded-lg">
+                <h3 className="text-xl font-semibold mb-3 text-blue-800">
+                  Transformer-Based AI Chatbot
+                </h3>
+                <p className="text-gray-700">
+                  Custom-trained PyTorch neural network with 6 encoder-decoder layers and 8 
+                  attention heads, trained on 1,187 curated Wyckoff Q&A pairs to intelligently 
+                  answer questions about market structure and analysis principles.
+                </p>
+              </div>
+              <div className="bg-indigo-50 p-6 rounded-lg">
+                <h3 className="text-xl font-semibold mb-3 text-indigo-800">
+                  Reinforcement Learning Trading Engine
+                </h3>
+                <p className="text-gray-700">
+                  Implements Q-learning algorithms to discover optimal buy/sell/hold strategies 
+                  through backtesting on historical stock data, training across 1,000 episodes.
+                </p>
+              </div>
+              <div className="bg-green-50 p-6 rounded-lg">
+                <h3 className="text-xl font-semibold mb-3 text-green-800">
+                  Real-Time Market Data
+                </h3>
+                <p className="text-gray-700">
+                  Automatically fetches live stock data via yfinance API and enriches it with 
+                  technical indicators including Moving Averages, RSI, Bollinger Bands, and OBV.
+                </p>
+              </div>
+              <div className="bg-purple-50 p-6 rounded-lg">
+                <h3 className="text-xl font-semibold mb-3 text-purple-800">
+                  Interactive Dashboard
+                </h3>
+                <p className="text-gray-700">
+                  Chart.js-powered interactive dashboard that visualizes trading results, 
+                  backtesting performance, technical indicators, and market trends.
+                </p>
+              </div>
+              <div className="bg-yellow-50 p-6 rounded-lg">
+                <h3 className="text-xl font-semibold mb-3 text-yellow-800">
+                  Customizable Backtesting
+                </h3>
+                <p className="text-gray-700">
+                  Evaluate algorithmic trading strategies across any stock symbol with flexible 
+                  parameters including custom date ranges and initial capital allocations.
+                </p>
+              </div>
+              <div className="bg-pink-50 p-6 rounded-lg">
+                <h3 className="text-xl font-semibold mb-3 text-pink-800">
+                  Educational Insights
+                </h3>
+                <p className="text-gray-700">
+                  Serves as both an educational tool for learning Wyckoff methodology and a 
+                  practical platform for testing trading strategies with real historical data.
+                </p>
+              </div>
+            </div>
+          </section>
+
+          <section>
+            <h2 className="text-3xl font-bold mb-6">Technology Stack</h2>
+            <div className="flex flex-wrap gap-3">
+              {[
+                "PyTorch",
+                "Flask",
+                "Q-Learning",
+                "Reinforcement Learning",
+                "Transformer",
+                "yfinance",
+                "Neural Networks",
+                "REST API",
+                "Chart.js",
+                "Moving Averages",
+                "RSI",
+                "Bollinger Bands",
+              ].map((tech) => (
+                <span
+                  key={tech}
+                  className="px-4 py-2 rounded-full text-white font-medium"
+                  style={{ backgroundColor: "#1E88E5" }}
+                >
+                  {tech}
+                </span>
+              ))}
+            </div>
+          </section>
+
+          <section>
+            <h2 className="text-3xl font-bold mb-6">Architecture</h2>
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+              <div className="bg-gray-50 p-6 rounded-lg">
+                <h3 className="text-xl font-semibold mb-3">Backend & AI</h3>
+                <ul className="space-y-2 text-gray-700">
+                  <li><strong>PyTorch:</strong> Deep learning framework for Transformer neural network</li>
+                  <li><strong>Flask:</strong> Lightweight web framework for REST API</li>
+                  <li><strong>Q-Learning:</strong> RL algorithm for trading strategy optimization</li>
+                  <li><strong>yfinance:</strong> Real-time and historical market data</li>
+                </ul>
+              </div>
+              <div className="bg-gray-50 p-6 rounded-lg">
+                <h3 className="text-xl font-semibold mb-3">Frontend & Visualization</h3>
+                <ul className="space-y-2 text-gray-700">
+                  <li><strong>Chart.js:</strong> Interactive data visualization for trading charts</li>
+                  <li><strong>REST API:</strong> Clean API architecture for integration</li>
+                  <li><strong>Technical Indicators:</strong> MA, RSI, Bollinger Bands engine</li>
+                  <li><strong>Responsive UI:</strong> Mobile-friendly interface</li>
+                </ul>
+              </div>
+            </div>
+          </section>
+
+          <section>
+            <h2 className="text-3xl font-bold mb-6">Impact</h2>
+            <div
+              className="p-6 rounded-lg text-white"
+              style={{ backgroundColor: "#1E88E5" }}
+            >
+              <ul className="space-y-3">
+                <li className="flex items-start gap-3">
+                  <span className="font-bold">AI-Powered Analysis</span> - Democratizes access to Wyckoff methodology through intelligent Q&A
+                </li>
+                <li className="flex items-start gap-3">
+                  <span className="font-bold">Automated Backtesting</span> - Enables rapid strategy validation without manual calculation
+                </li>
+                <li className="flex items-start gap-3">
+                  <span className="font-bold">Educational Value</span> - Helps traders learn and apply proven trading principles
+                </li>
+              </ul>
+            </div>
+          </section>
         </div>
       </div>
 
+      <br />
+      <br />
       <Footer />
     </div>
   );
