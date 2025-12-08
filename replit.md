@@ -3,7 +3,16 @@
 ## Overview
 This is a Next.js portfolio website showcasing projects, blog posts, and professional experience. The site features a modern UI built with Next.js 14, React, TailwindCSS, and NextUI components.
 
-## Recent Changes (November 20, 2025)
+## Recent Changes (December 8, 2025)
+- **Detail Pages Redesign**: Unified all 6 hackathon and project detail pages to follow a consistent Root Beer design pattern:
+  - Two-column grid layout (content left, image right)
+  - Achievement badges/technology category pills at top
+  - Colored action buttons (GitHub, YouTube, Presentation, LinkedIn, Figma)
+  - Structured sections: Problem, Solution/Key Features, Technology Stack, Impact
+  - Responsive design for mobile devices
+  - Pages updated: Pay2Flix, WebNova, Secure Social Share, Elderlycare, Wyckoff, Cloud Native
+
+## Previous Changes (November 20, 2025)
 - **Migrated from Vercel to Replit**: Updated configuration for Replit environment compatibility
 - **Port Configuration**: Modified dev and start scripts to bind to port 5000 on host 0.0.0.0
 - **Workflow Setup**: Configured automatic development server startup
