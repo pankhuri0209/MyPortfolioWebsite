@@ -94,27 +94,26 @@ const ElderlyCarePage: React.FC = () => {
             <img
               src="/images/elderlycare/logo.png"
               alt="ElderlyCare Logo"
-              className="rounded-lg shadow-lg max-w-[280px] h-auto"
+              className="rounded-lg shadow-lg max-w-[200px] max-h-[180px] object-contain"
             />
           </div>
         </div>
 
         <div className="mt-16 space-y-12">
           <section>
-            <h2 className="text-3xl font-bold mb-6">Screenshots</h2>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
               <div className="flex justify-center">
                 <img
                   src="/images/elderlycare/pic1.png"
                   alt="ElderlyCare Dashboard"
-                  className="max-w-[400px] w-full rounded-lg shadow-lg"
+                  className="max-w-[350px] max-h-[250px] w-full object-contain rounded-lg shadow-lg"
                 />
               </div>
               <div className="flex justify-center">
                 <img
                   src="/images/elderlycare/pic3.png"
                   alt="ElderlyCare Features"
-                  className="max-w-[400px] w-full rounded-lg shadow-lg"
+                  className="max-w-[350px] max-h-[250px] w-full object-contain rounded-lg shadow-lg"
                 />
               </div>
             </div>
